@@ -1,0 +1,30 @@
+.navLeft{
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 6px;
+    right: auto;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fab .fa-linkedin{
+     color: #CCD6F6;
+     font-size: 3vw;
+}
+.navLeft::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: $slate;
+}
+.navLeft ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding:0
+}

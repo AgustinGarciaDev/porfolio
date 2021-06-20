@@ -1,0 +1,72 @@
+.containerAbout{
+    max-width: 900px;
+    margin: 0px auto;
+    padding: 100px 0px;
+}
+.containertextAndPhoto{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+}
+.PhotoProfile{
+  width: 300px;
+  height: 300px;
+}
+.textAbout{
+    margin: 5px 0px 0px;
+    max-width: 500px;
+    color: #8892b0;
+    line-height: 1.4;
+    font-weight: 400;
+    padding: 1vw;
+}
+
+.titleandNumber{
+    display: flex;
+    align-items: center;
+}
+
+.titleandNumber::after{
+    content: "";
+    display: block;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: $light-slate;
+}
+
+.titleandNumber p{
+    color: $light-slate;
+    font-size: 1.6rem;
+    margin-left: 10px;
+}
+
+.titleandNumber> span{
+    color: $green;
+    font-family: $mono;
+    font-size: 1.5rem;
+}
+
+.skills{
+    display: flex;
+}
+.skills ul{
+    list-style: none;
+    margin: 0;
+    padding: 12px;
+}
+.skills > ul > li{
+    color: $light-slate;
+    font-family: $mono;
+     position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.skills > ul > li::before{
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: $green;
+    font-size: 1rem;
+    line-height: 12px;
+}

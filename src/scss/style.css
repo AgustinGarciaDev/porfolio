@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/* Colors */
+/* Typography */
+/* Scrool */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8892b0;
+  border-radius: 10px; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #CCD6F6; }
+
+body {
+  background-color: #0A192F; }
+
+h1, h2, h3, h5, h6, p {
+  font-weight: 600;
+  line-height: 1.1;
+  font-family: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+  margin: 0px; }
+
+.containerWeb {
+  display: flex; }
+
+.titleHero {
+  font-size: clamp(30px, 7vw, 70px);
+  color: #CCD6F6; }
+
+.subTitle {
+  font-size: clamp(30px, 7vw, 70px);
+  color: #8892b0; }
+
+.containerHero p {
+  margin: 20px 0px 0px;
+  max-width: 500px;
+  color: #8892b0;
+  line-height: 1.4;
+  font-weight: 400; }
+
+.btnHero {
+  color: #64FFDA;
+  background-color: transparent;
+  border: 1px solid #64FFDA;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 1.25rem 1.75rem;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 50px; }
+
+.containerHero {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0px; }
+
+.homeContainer {
+  padding: 0px 150px; }
+
+.navLeft {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 6px;
+  right: auto;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.fab .fa-linkedin {
+  color: #CCD6F6;
+  font-size: 3vw; }
+
+.navLeft::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: #8892b0; }
+
+.navLeft ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0; }
+
+.containerAbout {
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 100px 0px; }
+
+.containertextAndPhoto {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px; }
+
+.PhotoProfile {
+  width: 300px;
+  height: 300px; }
+
+.textAbout {
+  margin: 5px 0px 0px;
+  max-width: 500px;
+  color: #8892b0;
+  line-height: 1.4;
+  font-weight: 400;
+  padding: 1vw; }
+
+.titleandNumber {
+  display: flex;
+  align-items: center; }
+
+.titleandNumber::after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #CCD6F6; }
+
+.titleandNumber p {
+  color: #CCD6F6;
+  font-size: 1.6rem;
+  margin-left: 10px; }
+
+.titleandNumber > span {
+  color: #64FFDA;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 1.5rem; }
+
+.skills {
+  display: flex; }
+
+.skills ul {
+  list-style: none;
+  margin: 0;
+  padding: 12px; }
+
+.skills > ul > li {
+  color: #CCD6F6;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px; }
+
+.skills > ul > li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: #64FFDA;
+  font-size: 1rem;
+  line-height: 12px; }
+
+.jobs {
+  max-width: 700px;
+  margin: 0px auto;
+  padding: 100px 0px;
+  height: 36vw; }
+
+.containerTabs {
+  margin-top: 5vw; }
+
+.nav-pills .nav-link {
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  height: var(--tab-height);
+  padding: 0px 20px 2px;
+  border-left: 2px solid #0A192F;
+  background-color: transparent;
+  color: #8892b0;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: var(--fz-xs);
+  text-align: left;
+  white-space: nowrap; }
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #64FFDA; }
+
+.tab-content {
+  margin-left: 8vw; }
+
+.projectContainer {
+  margin: 0px auto;
+  padding: 100px 0px;
+  max-width: 1000px; }
+
+.cardProject {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vw;
+  align-items: center; }
+
+.cardProject:nth-child(2n+0) {
+  flex-direction: row-reverse; }
+
+.coverProjects {
+  width: 116vw;
+  height: 24vw;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.colorCover {
+  width: 98.7%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #64ffda42;
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */ }
+
+.colorCover:hover {
+  background: none; }
+
+.containerTextProjects {
+  position: relative;
+  right: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+
+.cardProject:nth-child(2n+0) .containerTextProjects {
+  left: 5vw;
+  align-items: flex-start; }
+
+.cardProject:nth-child(2n+0) .containerTextProjects > ul {
+  justify-content: flex-start;
+  padding: 0;
+  width: 30vw; }
+
+.containerTextProjects > p {
+  color: #64FFDA;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 15px;
+  font-weight: 200; }
+
+.containerTextProjects > h5 {
+  color: #8892b0;
+  font-size: 1.7rem;
+  margin: 0px 0px 20px; }
+
+.descriptionProject {
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #112240;
+  color: #CCD6F6; }
+
+.descriptionProject > p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 21px; }
+
+.containerTextProjects > ul {
+  list-style: none;
+  display: flex;
+  color: #CCD6F6;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 15px;
+  font-weight: 200;
+  flex-wrap: wrap;
+  justify-content: flex-end; }
+
+.containerTextProjects > ul > li {
+  padding: 7px; }

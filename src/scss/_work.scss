@@ -1,0 +1,35 @@
+.jobs{
+    max-width: 700px;
+    margin: 0px auto;
+    padding: 100px 0px;
+    height: 36vw;
+}
+.containerTabs{
+    margin-top: 5vw;
+}
+.nav-pills .nav-link{
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: var(--tab-height);
+    padding: 0px 20px 2px;
+    border-left: 2px solid $blue;
+    background-color: transparent;
+    color: $slate;
+    font-family: $mono;
+    font-size: var(--fz-xs);
+    text-align: left;
+    white-space: nowrap;
+}
+
+ .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: $green;
+} 
+.tab-content{
+    margin-left: 8vw;
+}

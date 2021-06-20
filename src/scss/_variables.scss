@@ -1,0 +1,35 @@
+/* Colors */
+
+$blue: #0A192F;
+$blue-light:#112240;
+$green: #64FFDA;
+$light-slate : #CCD6F6;
+$slate: #8892b0;
+$shadow:rgba(2,12,27,0.7);
+$overlay:#64ffda42;
+
+/* Typography */
+
+$sfpro: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+$mono:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+
+/* Scrool */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $slate; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:$light-slate; 
+}
