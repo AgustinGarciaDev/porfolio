@@ -1,0 +1,51 @@
+.containerOtherProjects{
+    display: flex;
+    flex-wrap: wrap;
+}
+.otherContainer{
+    box-shadow: 0 10px 30px -15px $shadow;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    height: 20vw;
+    width: 23vw;
+    margin: 1vw;
+    padding: 2rem 1.75rem;
+    border-radius:10px;
+    background-color:$blue-light;
+}
+
+.otherContainer h3 {
+    color: $light-slate;
+}
+
+.otherContainer p{
+    color: $slate;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 21px;
+}
+.containerIcons{
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 19vw;
+}
+.fa-external-link-alt{
+     font-size: 2vw;
+    color: white;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.fa-folder{
+     font-size: 2vw;
+    color: $green;
+}
+.fa-github-alt{
+    font-size: 2vw;
+    color: white;
+}

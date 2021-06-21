@@ -1,0 +1,51 @@
+
+.titleandNumberContact  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titleandNumberContact> p{
+    color: $green;
+    font-family: $mono;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+.titleandNumberContact> span{
+    color: $green;
+    font-family: $mono;
+    font-size: 1.5rem;
+}
+.containerTextContact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerTextContact > h3{
+    color: $light-slate;
+    text-align: center;
+      font-size: clamp(20px, 3vw, 40px);
+}
+.containerTextContact > p{
+    margin: 20px 0px 0px;
+    max-width: 1000px;
+    color: $slate;
+    line-height:1.4;
+    font-weight: 400;
+    text-align: center;
+}
+
+.containerTextContact > button{
+       color: $green;
+    background-color: transparent;
+    border: 1px solid $green;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 1.25rem 1.75rem;
+    font-family: $mono;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 50px;
+}

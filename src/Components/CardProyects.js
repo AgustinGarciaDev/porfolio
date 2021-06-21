@@ -1,8 +1,8 @@
-const CardProjects = ({ project: { title, description, tecnology } }) => {
+const CardProjects = ({ project: { title, description, tecnology, url, linkWeb, gitHubLink } }) => {
 
     return (
         <article className='cardProject'>
-            <div className="coverProjects" style={{ backgroundImage: ` url('https://user-images.githubusercontent.com/66225450/122659237-6361b700-d14c-11eb-9b99-648d4189bf97.png')` }}>
+            <div className="coverProjects" style={{ backgroundImage: ` url('${url}')` }}>
                 <div className='colorCover'></div>
             </div>
             <div className="containerTextProjects">
@@ -14,6 +14,16 @@ const CardProjects = ({ project: { title, description, tecnology } }) => {
                 <ul>
                     {tecnology.map((item, index) => <li key={index} >{item}</li>)}
                 </ul>
+                <div>
+                    {linkWeb &&
+                        <a href={linkWeb}>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    }
+                    <a href={gitHubLink}>
+                        <i class="fab fa-github-alt"></i>
+                    </a>
+                </div>
             </div>
 
         </article>

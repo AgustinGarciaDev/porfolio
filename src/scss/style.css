@@ -21,6 +21,41 @@
 body {
   background-color: #0A192F; }
 
+header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between; }
+
+.containerItemsNav {
+  display: flex;
+  align-items: center; }
+
+.containerItemsNav > ul {
+  display: flex;
+  list-style: none;
+  margin: 0; }
+
+.containerItemsNav > ul > li {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace; }
+
+.containerItemsNav > button {
+  color: #10FAF4;
+  background-color: transparent;
+  border: 1px solid #10FAF4;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 1rem 1rem;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer; }
+
+.logo {
+  width: 10vw; }
+
 h1, h2, h3, h5, h6, p {
   font-weight: 600;
   line-height: 1.1;
@@ -46,9 +81,9 @@ h1, h2, h3, h5, h6, p {
   font-weight: 400; }
 
 .btnHero {
-  color: #64FFDA;
+  color: #10FAF4;
   background-color: transparent;
-  border: 1px solid #64FFDA;
+  border: 1px solid #10FAF4;
   border-radius: 5px;
   font-size: 17px;
   padding: 1.25rem 1.75rem;
@@ -82,9 +117,15 @@ h1, h2, h3, h5, h6, p {
   flex-direction: column;
   align-items: center; }
 
-.fab .fa-linkedin {
-  color: #CCD6F6;
-  font-size: 3vw; }
+.fa-linkedin {
+  font-size: 2vw;
+  padding: 5px;
+  color: #8892b0; }
+
+.fa-github-square {
+  font-size: 2vw;
+  padding: 5px;
+  color: #8892b0; }
 
 .navLeft::after {
   content: "";
@@ -99,6 +140,41 @@ h1, h2, h3, h5, h6, p {
   flex-direction: column;
   margin: 0;
   padding: 0; }
+
+.navRigth {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+  color: red; }
+
+.navRigth a {
+  margin: 20px auto;
+  padding: 10px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 26px;
+  writing-mode: vertical-rl;
+  font-size: 17px;
+  color: #0dcaf0 !important;
+  text-decoration: none;
+  letter-spacing: 2px; }
+
+.containerEmail {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative; }
+
+.navRigth::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: #8892b0; }
 
 .containerAbout {
   max-width: 900px;
@@ -140,7 +216,7 @@ h1, h2, h3, h5, h6, p {
   margin-left: 10px; }
 
 .titleandNumber > span {
-  color: #64FFDA;
+  color: #10FAF4;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: 1.5rem; }
 
@@ -163,7 +239,8 @@ h1, h2, h3, h5, h6, p {
   content: "▹";
   position: absolute;
   left: 0px;
-  color: #64FFDA;
+  top: 6px;
+  color: #10FAF4;
   font-size: 1rem;
   line-height: 12px; }
 
@@ -196,13 +273,31 @@ h1, h2, h3, h5, h6, p {
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #64FFDA; }
+  background-color: #10FAF4; }
 
 .tab-content {
   margin-left: 8vw; }
 
+.containerJobDescription h2 {
+  color: #CCD6F6;
+  font-family: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif; }
+
+.jobDate {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  color: #8892b0;
+  margin-top: 6px; }
+
+.jobDescription {
+  color: #8892b0;
+  font-family: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+  margin-top: 10px; }
+
+.containerItemsExperience {
+  display: flex;
+  align-items: center; }
+
 .projectContainer {
-  margin: 0px auto;
+  /*    margin: 0px auto; */
   padding: 100px 0px;
   max-width: 1000px; }
 
@@ -257,7 +352,7 @@ h1, h2, h3, h5, h6, p {
   width: 30vw; }
 
 .containerTextProjects > p {
-  color: #64FFDA;
+  color: #10FAF4;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: 15px;
   font-weight: 200; }
@@ -293,3 +388,100 @@ h1, h2, h3, h5, h6, p {
 
 .containerTextProjects > ul > li {
   padding: 7px; }
+
+.containerOtherProjects {
+  display: flex;
+  flex-wrap: wrap; }
+
+.otherContainer {
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  height: 20vw;
+  width: 23vw;
+  margin: 1vw;
+  padding: 2rem 1.75rem;
+  border-radius: 10px;
+  background-color: #112240; }
+
+.otherContainer h3 {
+  color: #CCD6F6; }
+
+.otherContainer p {
+  color: #8892b0;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 21px; }
+
+.containerIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 19vw; }
+
+.fa-external-link-alt {
+  font-size: 2vw;
+  color: white;
+  padding-left: 13px;
+  padding-right: 13px; }
+
+.fa-folder {
+  font-size: 2vw;
+  color: #10FAF4; }
+
+.fa-github-alt {
+  font-size: 2vw;
+  color: white; }
+
+.titleandNumberContact {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.titleandNumberContact > p {
+  color: #10FAF4;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  margin-left: 10px; }
+
+.titleandNumberContact > span {
+  color: #10FAF4;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 1.5rem; }
+
+.containerTextContact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.containerTextContact > h3 {
+  color: #CCD6F6;
+  text-align: center;
+  font-size: clamp(20px, 3vw, 40px); }
+
+.containerTextContact > p {
+  margin: 20px 0px 0px;
+  max-width: 1000px;
+  color: #8892b0;
+  line-height: 1.4;
+  font-weight: 400;
+  text-align: center; }
+
+.containerTextContact > button {
+  color: #10FAF4;
+  background-color: transparent;
+  border: 1px solid #10FAF4;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 1.25rem 1.75rem;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 50px; }

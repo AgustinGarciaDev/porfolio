@@ -1,4 +1,4 @@
-const NavBar = () => {
+const NavBarLeft = () => {
     return (
         <div className="navLeft">
             <ul>
@@ -9,4 +9,4 @@ const NavBar = () => {
     )
 }
 
-export default NavBar
+export default NavBarLeft

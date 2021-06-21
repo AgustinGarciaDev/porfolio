@@ -1,3 +1,38 @@
 body{
     background-color: $blue;
 }
+header{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.containerItemsNav{
+        display: flex;
+    align-items: center;
+}
+.containerItemsNav> ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+.containerItemsNav > ul > li{
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: $mono;
+}
+.containerItemsNav >button{
+    color: $green;
+    background-color: transparent;
+    border: 1px solid $green;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 1rem 1rem;
+    font-family: $mono;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+.logo{
+    width: 10vw;
+}

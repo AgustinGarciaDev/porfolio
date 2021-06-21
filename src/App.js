@@ -1,7 +1,8 @@
 import Header from './Components/Header';
 import Home from './Pages/Home'
 import Footer from './Components/Footer'
-import NavBar from './Components/NavBar';
+import NavBarLeft from './Components/NavBarLeft';
+import NavBarRigth from './Components/NavBarRigth'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/style.css'
 
@@ -11,9 +12,9 @@ const App = () => {
     <>
       <Header />
       <div className="containerWeb">
-        <NavBar />
+        <NavBarLeft />
         <Home />
-        <NavBar />
+        <NavBarRigth />
       </div>
       <Footer />
     </>

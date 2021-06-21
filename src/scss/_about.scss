@@ -1,6 +1,6 @@
 .containerAbout{
     max-width: 900px;
-    margin: 0px auto;
+     margin: 0px auto;  
     padding: 100px 0px;
 }
 .containertextAndPhoto{
@@ -66,6 +66,7 @@
     content: "▹";
     position: absolute;
     left: 0px;
+    top: 6px;
     color: $green;
     font-size: 1rem;
     line-height: 12px;
