@@ -1,6 +1,7 @@
 .containerOtherProjects{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .otherContainer{
     box-shadow: 0 10px 30px -15px $shadow;
@@ -48,4 +49,78 @@
 .fa-github-alt{
     font-size: 2vw;
     color: white;
+}
+
+.otherContainer > ul {
+    list-style: none;
+    display: flex;
+    color: #CCD6F6;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-size: 15px;
+    font-weight: 200;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.otherContainer > ul > li {
+    padding: 7px;
+}
+
+@media (max-width: 800px){
+.otherContainer{
+        height: 31vw;
+    width: 39vw;
+}
+.fa-external-link-alt{
+     font-size: 3vw;
+}
+.fa-folder{
+     font-size: 3vw;
+}
+.fa-github-alt{
+    font-size: 3vw;
+}
+
+.containerIcons{
+    width: 32vw;
+}
+
+}
+@media (max-width: 665px){
+    .containerIcons {
+        width: 58vw;
+    }
+    .otherContainer{
+     height: 40vw;
+    width: 74vw
+    }
+    .otherContainer h3 {
+    font-size: 36px;
+    }
+    .otherContainer p{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:460px){
+    .otherContainer {
+    height: 60vw;
+    width: 82vw;
+}
+.fa-external-link-alt{
+     font-size: 5vw;
+}
+.fa-folder{
+     font-size: 5vw;
+}
+.fa-github-alt{
+    font-size: 5vw;
+}
+
+}
+
+@media(max-width:375px){
+      .otherContainer p {
+    font-size: 14px;
+}
 }

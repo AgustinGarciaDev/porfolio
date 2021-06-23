@@ -1,18 +1,18 @@
 const Contact = () => {
     return (
-        <section className="jobs">
+        <section id="contact" className="jobs">
             <div className="titleSectionContact">
                 <div className="titleandNumberContact">
                     <span >.04</span>
-                    <p>What’s Next?</p>
+                    <p>¿Cual es el siguiente paso?</p>
                 </div>
             </div>
             <div className="containerTextContact">
-                <h3>Get In Touch</h3>
+                <h3>Contactame</h3>
                 <p>
-                    Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                    En este momento estoy buscando nuevas oportunidades y desafíos
                 </p>
-                <button>Contacto!</button>
+                <a href="mailto:agustinchinchilla16@gmail.com">Contacto!</a>
             </div>
 
         </section>

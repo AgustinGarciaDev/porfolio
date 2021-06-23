@@ -1,25 +1,44 @@
+import { gsap } from 'gsap'
+import { useRef } from "react"
+import { useEffect } from "react"
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const About = () => {
 
+    const titleNumer = useRef(null)
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger)
+        gsap.from(titleNumer.current, {
+            opacity: 0,
+            duration: 3,
+            x: -1000,
+            scrollTrigger: {
+                trigger: titleNumer.current,
+                toggleActions: 'play  pause none none'
+            }
+        }, {
+            x: 0
+        })
+
+    }, [])
+
     return (
-        <section className="containerAbout">
-            <div className="titleSection">
+        <section id="about" className="containerAbout">
+            <div ref={titleNumer} className="titleSection">
                 <div className="titleandNumber">
                     <span >.01</span>
-                    <p>About Me</p>
+                    <p>Acerca de mí</p>
                 </div>
                 <div></div>
             </div>
             <article className="containertextAndPhoto">
                 <div>
                     <p className="textAbout">
-                        Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
+                        Soy un joven apasionado por el desarrollo y diseño de aplicaciones web y móviles, con gran capacidad para aprender haciendo y autónomamente, con ansias de grandes desafíos, que se encuentra en búsqueda de trabajo principalmente remoto (o dispuesto a reubicación). He finalizado recientemente un coding bootcamp de Full Stack MERN.
                     </p>
                     <p className="textAbout">
-                        Fast-forward to today, and I've had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.
-                    </p>
-                    <p className="textAbout">
-                        Here are a few technologies I've been working with recently:
+                        Tecnologías que he utilizado recientemente:
                     </p>
                     <div className="skills">
                         <ul >
@@ -49,6 +68,7 @@ const About = () => {
                 </div>
             </article>
         </section>
+
     )
 }
 

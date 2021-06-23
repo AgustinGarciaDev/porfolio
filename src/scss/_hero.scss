@@ -36,6 +36,7 @@ h1,h2,h3,h5,h6, p{
     text-decoration: none;
     cursor: pointer;
     margin-top: 50px;
+    display: inline-block;
 }
 .containerHero{
     display: flex;
@@ -46,7 +47,34 @@ h1,h2,h3,h5,h6, p{
     align-items: flex-start;
     min-height: 100vh;
     padding: 0px;
+    margin-top: 30px;
+}
+main{
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh;
 }
 .homeContainer{
         padding: 0px 150px;
+}
+
+@media (max-width: 800px){
+    .homeContainer{
+     padding: 0px 50px;
+    }
+}
+
+@media(max-width: 375px){
+   .homeContainer {
+    padding: 0px 33px;
+    }
+    .containerHero{
+        margin-top: 73px;
+    }
+  .titleHero {
+    font-size: clamp(30px, 10vw, 70px);
+    color: #CCD6F6;
+}
+
 }

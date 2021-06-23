@@ -73,3 +73,12 @@
     background-color: $slate;
     
 }
+
+@media (max-width: 800px){
+    .navLeft{
+        display: none;
+    }
+    .navRigth{
+        display: none;
+    }
+}

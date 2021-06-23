@@ -1,12 +1,12 @@
-const CardProjects = ({ project: { title, description, tecnology, url, linkWeb, gitHubLink } }) => {
+const CardProjects = ({ project: { id, title, description, tecnology, url, linkWeb, gitHubLink } }) => {
 
     return (
-        <article className='cardProject'>
+        <article id={id} className='cardProject'>
             <div className="coverProjects" style={{ backgroundImage: ` url('${url}')` }}>
                 <div className='colorCover'></div>
             </div>
             <div className="containerTextProjects">
-                <p>Featured Project</p>
+                <p>Proyecto destacado</p>
                 <h5>{title}</h5>
                 <div className="descriptionProject">
                     <p>{description}</p>

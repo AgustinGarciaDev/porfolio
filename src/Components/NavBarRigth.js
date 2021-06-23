@@ -2,7 +2,7 @@ const NavBarRigth = () => {
     return (
         <div className="navRigth">
             <div className="containerEmail">
-                <a href="">Agustinchinchilla16@gmail.com</a>
+                <a href="mailto:agustinchinchilla16@gmail.com">Agustinchinchilla16@gmail.com</a>
             </div>
         </div>
     )

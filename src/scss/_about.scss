@@ -49,6 +49,7 @@
 
 .skills{
     display: flex;
+    flex-wrap: wrap;
 }
 .skills ul{
     list-style: none;
@@ -70,4 +71,21 @@
     color: $green;
     font-size: 1rem;
     line-height: 12px;
+}
+
+@media (max-width: 800px){
+  .containerAbout{
+    max-width: 900px;
+    margin: 0;
+    padding: 0;
+}
+.containertextAndPhoto {
+    display: block;
+}
+}
+
+@media(max-width:375px){
+    .skills ul {
+    padding: 0;
+}
 }

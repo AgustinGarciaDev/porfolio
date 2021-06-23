@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 import { gsap } from 'gsap'
 
 const Hero = () => {
@@ -27,18 +27,20 @@ const Hero = () => {
     }, [])
 
     return (
-        <section className="containerHero">
+        <section id="inicio" className="containerHero">
             <h1 className="titleHero" ref={title}  >
                 Agustin Garcia.
             </h1>
             <div ref={containerHero}>
-                <h2 className="subTitle">I build things for the web.</h2>
+                <h2 className="subTitle">Full Stack MERN lover  {`${'<3'}`} </h2>
                 <p className="textHero">
-                    I'm a Boston-based software engineer who specializes in building (and occasionally designing) exceptional digital experiences. Currently, I'm an engineer at Upstatement focused on building accessible, human-centered products.
+                    ¡Bienvenidx! Gracias por interesarte en mi perfil. <br /> Soy un  desarrollador Full Stack MERN & Mobile que reside en la ciudad
+                    de Buenos Aires y está en búsqueda de nuevos desafíos. Espero disfrutes los trabajos
+                    que he seleccionado para este porfolio.
                 </p>
-                <button className="btnHero">
-                    Get in touch
-                </button>
+                <a href="#contact" className="btnHero">
+                    Ponete en contacto
+                </a>
             </div>
         </section>
     )

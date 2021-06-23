@@ -3,11 +3,11 @@ import TabJobs from "./TabJobs"
 const Work = () => {
 
     return (
-        <section className="jobs">
+        <section id="experience" className="jobs">
             <div className="titleSection">
                 <div className="titleandNumber">
                     <span >.02</span>
-                    <p>Where I’ve Worked</p>
+                    <p>Experiencia laboral</p>
                 </div>
                 <div></div>
             </div>

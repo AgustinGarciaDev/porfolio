@@ -18,6 +18,10 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #CCD6F6; }
 
+@media (max-width: 800px) {
+  p {
+    font-size: 20px; } }
+
 body {
   background-color: #0A192F; }
 
@@ -29,17 +33,6 @@ header {
 .containerItemsNav {
   display: flex;
   align-items: center; }
-
-.containerItemsNav > ul {
-  display: flex;
-  list-style: none;
-  margin: 0; }
-
-.containerItemsNav > ul > li {
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace; }
 
 .containerItemsNav > button {
   color: #10FAF4;
@@ -55,6 +48,20 @@ header {
 
 .logo {
   width: 10vw; }
+
+.fixed-top {
+  background: #0c2343b0;
+  backdrop-filter: blur(5px); }
+
+.nav-link {
+  color: white !important;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace; }
+
+@media (max-width: 375px) {
+  .navbar-brand {
+    margin-left: 17px; }
+  .logo {
+    width: 15vw; } }
 
 h1, h2, h3, h5, h6, p {
   font-weight: 600;
@@ -91,7 +98,8 @@ h1, h2, h3, h5, h6, p {
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
-  margin-top: 50px; }
+  margin-top: 50px;
+  display: inline-block; }
 
 .containerHero {
   display: flex;
@@ -101,10 +109,30 @@ h1, h2, h3, h5, h6, p {
   flex-direction: column;
   align-items: flex-start;
   min-height: 100vh;
-  padding: 0px; }
+  padding: 0px;
+  margin-top: 30px; }
+
+main {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh; }
 
 .homeContainer {
   padding: 0px 150px; }
+
+@media (max-width: 800px) {
+  .homeContainer {
+    padding: 0px 50px; } }
+
+@media (max-width: 375px) {
+  .homeContainer {
+    padding: 0px 33px; }
+  .containerHero {
+    margin-top: 73px; }
+  .titleHero {
+    font-size: clamp(30px, 10vw, 70px);
+    color: #CCD6F6; } }
 
 .navLeft {
   width: 40px;
@@ -176,6 +204,12 @@ h1, h2, h3, h5, h6, p {
   margin: 0px auto;
   background-color: #8892b0; }
 
+@media (max-width: 800px) {
+  .navLeft {
+    display: none; }
+  .navRigth {
+    display: none; } }
+
 .containerAbout {
   max-width: 900px;
   margin: 0px auto;
@@ -221,7 +255,8 @@ h1, h2, h3, h5, h6, p {
   font-size: 1.5rem; }
 
 .skills {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .skills ul {
   list-style: none;
@@ -243,6 +278,18 @@ h1, h2, h3, h5, h6, p {
   color: #10FAF4;
   font-size: 1rem;
   line-height: 12px; }
+
+@media (max-width: 800px) {
+  .containerAbout {
+    max-width: 900px;
+    margin: 0;
+    padding: 0; }
+  .containertextAndPhoto {
+    display: block; } }
+
+@media (max-width: 375px) {
+  .skills ul {
+    padding: 0; } }
 
 .jobs {
   max-width: 700px;
@@ -290,11 +337,51 @@ h1, h2, h3, h5, h6, p {
 .jobDescription {
   color: #8892b0;
   font-family: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-weight: 400; }
 
 .containerItemsExperience {
   display: flex;
   align-items: center; }
+
+.containerJobDescription > ul {
+  list-style: none;
+  display: flex;
+  color: #CCD6F6;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 15px;
+  font-weight: 200;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 10px; }
+
+@media (max-width: 900px) {
+  .jobs {
+    height: 67vw; }
+  .containerJobDescription {
+    margin-left: 7vw; } }
+
+@media (max-width: 668px) {
+  .jobs {
+    height: 95vw; }
+  .tab-content {
+    margin: 20px 0; }
+  .nav-pills .nav-link {
+    font-size: 21px; }
+  .col-sm-9 {
+    width: 100%; } }
+
+@media (max-width: 475px) {
+  .titleandNumber::after {
+    width: 110px; }
+  .jobs {
+    height: 7%; }
+  .tab-content {
+    margin: 20px 0; }
+  .nav-pills .nav-link {
+    font-size: 21px; }
+  .col-sm-9 {
+    width: 100%; } }
 
 .projectContainer {
   /*    margin: 0px auto; */
@@ -315,25 +402,6 @@ h1, h2, h3, h5, h6, p {
   height: 24vw;
   background-size: contain;
   background-repeat: no-repeat; }
-
-.colorCover {
-  width: 98.7%;
-  /* Full width (cover the whole page) */
-  height: 100%;
-  /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #64ffda42;
-  /* Black background with opacity */
-  z-index: 2;
-  /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer;
-  /* Add a pointer on hover */ }
-
-.colorCover:hover {
-  background: none; }
 
 .containerTextProjects {
   position: relative;
@@ -389,9 +457,56 @@ h1, h2, h3, h5, h6, p {
 .containerTextProjects > ul > li {
   padding: 7px; }
 
+@media (max-width: 800px) {
+  .coverProjects {
+    height: 48vw;
+    width: 80vw;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .cardProject {
+    flex-direction: column; }
+  .colorCover {
+    width: 99.7%; }
+  .descriptionProject {
+    width: 72vw; }
+  .containerTextProjects {
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    right: 0; }
+  .containerTextProjects > ul {
+    justify-content: flex-start;
+    padding: 0;
+    width: auto; }
+  .cardProject:nth-child(2n+0) .containerTextProjects {
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    left: 0; }
+  .cardProject:nth-child(2n+0) {
+    flex-direction: column; }
+  .cardProject:nth-child(2n+0) .containerTextProjects > ul {
+    justify-content: flex-start;
+    padding: 0;
+    width: auto; }
+  .containerTextProjects > p {
+    font-size: 17px;
+    margin: 18px 0; }
+  .containerTextProjects > h5 {
+    color: #8892b0;
+    font-size: 1.9rem;
+    margin: 0px 0px 20px; } }
+
+@media (max-width: 375px) {
+  .descriptionProject {
+    width: 91vw; }
+  .cardProject {
+    margin: 32px 0; } }
+
 .containerOtherProjects {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .otherContainer {
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
@@ -438,6 +553,59 @@ h1, h2, h3, h5, h6, p {
   font-size: 2vw;
   color: white; }
 
+.otherContainer > ul {
+  list-style: none;
+  display: flex;
+  color: #CCD6F6;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 15px;
+  font-weight: 200;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0; }
+
+.otherContainer > ul > li {
+  padding: 7px; }
+
+@media (max-width: 800px) {
+  .otherContainer {
+    height: 31vw;
+    width: 39vw; }
+  .fa-external-link-alt {
+    font-size: 3vw; }
+  .fa-folder {
+    font-size: 3vw; }
+  .fa-github-alt {
+    font-size: 3vw; }
+  .containerIcons {
+    width: 32vw; } }
+
+@media (max-width: 665px) {
+  .containerIcons {
+    width: 58vw; }
+  .otherContainer {
+    height: 40vw;
+    width: 74vw; }
+  .otherContainer h3 {
+    font-size: 36px; }
+  .otherContainer p {
+    font-size: 20px; } }
+
+@media (max-width: 460px) {
+  .otherContainer {
+    height: 60vw;
+    width: 82vw; }
+  .fa-external-link-alt {
+    font-size: 5vw; }
+  .fa-folder {
+    font-size: 5vw; }
+  .fa-github-alt {
+    font-size: 5vw; } }
+
+@media (max-width: 375px) {
+  .otherContainer p {
+    font-size: 14px; } }
+
 .titleandNumberContact {
   display: flex;
   align-items: center;
@@ -473,7 +641,7 @@ h1, h2, h3, h5, h6, p {
   font-weight: 400;
   text-align: center; }
 
-.containerTextContact > button {
+.containerTextContact > a {
   color: #10FAF4;
   background-color: transparent;
   border: 1px solid #10FAF4;
@@ -485,3 +653,15 @@ h1, h2, h3, h5, h6, p {
   text-decoration: none;
   cursor: pointer;
   margin-top: 50px; }
+
+@media (max-width: 800px) {
+  .containerTextContact > h3 {
+    font-size: clamp(22px, 7vw, 43px); }
+  .containerTextContact > p {
+    font-size: 20px; }
+  .containerTextContact {
+    padding: 20px; } }
+
+@media (max-width: 375px) {
+  .titleandNumber::after {
+    width: 100px; } }

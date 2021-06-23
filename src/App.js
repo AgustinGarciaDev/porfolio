@@ -5,19 +5,29 @@ import NavBarLeft from './Components/NavBarLeft';
 import NavBarRigth from './Components/NavBarRigth'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/style.css'
-
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import About from './Components/About';
+import Projects from './Components/Projects';
+import Work from './Components/Work';
+import Contact from './Components/Contact';
 const App = () => {
 
   return (
-    <>
+    <BrowserRouter>
       <Header />
       <div className="containerWeb">
         <NavBarLeft />
-        <Home />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" />
+          <Route exact path="/experience" />
+          <Route exact path="/work" />
+          <Route exact path="/contact" />
+        </Switch>
         <NavBarRigth />
       </div>
       <Footer />
-    </>
+    </BrowserRouter>
   )
 }
 

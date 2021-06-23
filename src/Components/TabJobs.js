@@ -7,25 +7,35 @@ const TabJobs = () => {
 
     const jobs = [
         {
-            title: 'Proyectos Full stack',
-            descripction: '  Collaborated with a small team of student designers to spearhead a new brand and design system for Scout’s inaugural student-led design conference at Northeastern',
-            item: [{ name: 'myTinerary', description: 'este proyecto' }],
+            title: 'Proyectos Full Stack MERN',
+            descripction: 'En el bootcamp de mindHub adquire los conocimientos del stack mern con los cuales desarrole los siguientes proyectos:',
+            item: [
+                { name: 'myTinerary', id: '#mytinerary', description: 'Aplicación web de viajes' },
+                { name: 'myTinerary App', id: '#mytineraryapp', description: 'Aplicación movil de myTinerary' },
+                { name: 'Explore', id: '#explore', description: 'Aplicación  web de e-commerce' },
+                { name: 'Explore App', id: '#exploreapp', description: 'Aplicación  web de e-commerce' },
+                { name: 'MindTrainer', id: '#mindtrainer', description: 'Aplicación  web de cursos online' },
+            ],
             key: 'first',
-            date: 'May- 2019'
+            date: 'Febrero-2021'
         },
         {
-            title: 'Wordpress',
-            descripction: '  Collaborated with a small team of student designers to spearhead a new brand and design system for Scout’s inaugural student-led design conference at Northeastern',
-            item: [{ name: 'myTinerary', description: 'este proyecto' }],
+            title: 'Creación de páginas web con WordPress',
+            descripction: 'En mi experiencia con este CRM, realice distintos proyectos tanto personales como para clientes desde ecommerces, academias online, lading page, blogs, coorporativos entre otros. Algunos de mis ultimos proyectos',
+            item: [
+                { name: 'Spanish Learn and Travel', description: 'Academia online', id: 'https://spanishlearnandtravel.com/' },
+                { name: 'Academia Claxon learning', description: 'Academia online', id: 'https://claxonlearning.com/' },
+                { name: 'Gestión humana', description: 'Academia online', id: 'https://ghcapacitacion.com/cursos/' },
+            ],
             key: 'second',
-            date: 'May- 2019',
+            date: 'May- 2018',
         },
         {
-            title: 'Wordpress',
-            descripction: '  Collaborated with a small team of student designers to spearhead a new brand and design system for Scout’s inaugural student-led design conference at Northeastern',
-            item: [{ name: 'myTinerary', description: 'este proyecto' }],
+            title: 'Seo',
+            descripction: 'He realizado en varias web para clientes optimización web/blog, keywords research y estrategia decontenido',
+            item: [],
             key: 'three',
-            date: 'May- 2019',
+            date: 'May- 2018',
         },
 
 
@@ -33,12 +43,11 @@ const TabJobs = () => {
 
     const jobItem = (items) => {
 
-        console.log(items)
         return items.map((item, index) => {
             return (
-                <li>
+                <li key={index}>
                     <span className="containerItemsExperience">
-                        <a href="">{item.name}:</a>
+                        <a href={item.id}>{item.name}:</a>
                         <p>{item.description}</p>
                     </span>
                 </li>
@@ -58,7 +67,7 @@ const TabJobs = () => {
                             <Nav.Link eventKey="second">Desarrollador Wordpress</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="three">SEO web</Nav.Link>
+                            <Nav.Link eventKey="three">Seo</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Col>
