@@ -8,12 +8,12 @@ const CardOtherProjects = ({ project: { title, description, tecnology, gitHub, l
                 </a>
 
                 <div>
-                    <a href={link}>
-                        <i class="fas fa-external-link-alt"></i>
+                    <a target="_blank" rel="noopener noreferrer" href={link}>
+                        <i className="fas fa-external-link-alt"></i>
                     </a>
                     {gitHub &&
-                        <a href={gitHub}>
-                            <i class="fab fa-github-alt"></i>
+                        <a target="_blank" rel="noopener noreferrer" href={gitHub}>
+                            <i className="fab fa-github-alt"></i>
                         </a>
 
                     }
@@ -22,7 +22,7 @@ const CardOtherProjects = ({ project: { title, description, tecnology, gitHub, l
             <h3>{title}</h3>
             <p>{description}</p>
             <ul>
-                {tecnology.map((item, index) => <li>{item}</li>)}
+                {tecnology.map((item, index) => <li key={index}>{item}</li>)}
             </ul>
         </article>
     )

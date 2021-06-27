@@ -2,8 +2,8 @@ const NavBarLeft = () => {
     return (
         <div className="navLeft">
             <ul>
-                <a href="https://www.linkedin.com/in/agust%C3%ADngarc%C3%ADa/"><i class="fab fa-linkedin "></i></a>
-                <a href="https://github.com/AgustinGarciaDev"><i class="fab fa-github-square"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/agust%C3%ADngarc%C3%ADa/"><i className="fab fa-linkedin "></i></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/AgustinGarciaDev"><i className="fab fa-github-square"></i></a>
             </ul>
         </div>
     )

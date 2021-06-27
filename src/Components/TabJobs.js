@@ -61,7 +61,7 @@ const TabJobs = () => {
                 <Col sm={3}>
                     <Nav variant="pills" className="flex-column">
                         <Nav.Item>
-                            <Nav.Link class="btnTabsJobs" eventKey="first">Experiencia en proyectos</Nav.Link>
+                            <Nav.Link className="btnTabsJobs" eventKey="first">Experiencia en proyectos</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey="second">Desarrollador Wordpress</Nav.Link>
@@ -75,7 +75,7 @@ const TabJobs = () => {
                     <Tab.Content>
                         {jobs.map(job => {
                             return (
-                                <Tab.Pane eventKey={job.key}>
+                                <Tab.Pane key={job.key} eventKey={job.key}>
                                     <div className='containerJobDescription'>
                                         <h2>{job.title}</h2>
                                         <p className="jobDate">{job.date}</p>

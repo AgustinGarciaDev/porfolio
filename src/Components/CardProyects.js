@@ -16,12 +16,12 @@ const CardProjects = ({ project: { id, title, description, tecnology, url, linkW
                 </ul>
                 <div>
                     {linkWeb &&
-                        <a href={linkWeb}>
-                            <i class="fas fa-external-link-alt"></i>
+                        <a target="_blank" rel="noopener noreferrer" href={linkWeb}>
+                            <i className="fas fa-external-link-alt"></i>
                         </a>
                     }
-                    <a href={gitHubLink}>
-                        <i class="fab fa-github-alt"></i>
+                    <a target="_blank" rel="noopener noreferrer" href={gitHubLink}>
+                        <i className="fab fa-github-alt"></i>
                     </a>
                 </div>
             </div>

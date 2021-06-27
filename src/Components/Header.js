@@ -31,7 +31,7 @@ const Header = () => {
                     <Nav.Link href="#projects"><span>04.</span>Proyectos</Nav.Link>
                     <Nav.Link href="#contact"><span>05.</span>Contacto</Nav.Link>
                 </Nav>
-                <a target="_blank" href='/cv-agustinchinchilla.pdf' download rel="noopener noreferrer" className='btnHeaderCv'>Descargar CV</a>
+                <a target="_blank" href='/assets/cv-agustinchinchilla.pdf' download rel="noopener noreferrer" className='btnHeaderCv'>Descargar CV</a>
             </Navbar.Collapse>
         </Navbar>
 
