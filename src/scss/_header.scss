@@ -36,6 +36,26 @@ header{
   font-family: $mono;
 }
 
+.nav-link > span{
+  color: $green
+
+}
+.btnHeaderCv{
+    color: $green;
+    background-color: transparent;
+    border: 1px solid $green;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 0.65rem 1.75rem;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+.navbar-collapse{
+    justify-content: space-between;
+}
 @media(max-width:375px){
     .navbar-brand{
         margin-left: 17px;

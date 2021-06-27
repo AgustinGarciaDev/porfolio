@@ -57,6 +57,25 @@ header {
   color: white !important;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace; }
 
+.nav-link > span {
+  color: #10FAF4; }
+
+.btnHeaderCv {
+  color: #10FAF4;
+  background-color: transparent;
+  border: 1px solid #10FAF4;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 0.65rem 1.75rem;
+  font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block; }
+
+.navbar-collapse {
+  justify-content: space-between; }
+
 @media (max-width: 375px) {
   .navbar-brand {
     margin-left: 17px; }

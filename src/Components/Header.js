@@ -25,12 +25,13 @@ const Header = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="#Inicio">Inicio</Nav.Link>
-                    <Nav.Link href="#about">Acerca de mi</Nav.Link>
-                    <Nav.Link href="#experience">Experiencia</Nav.Link>
-                    <Nav.Link href="#projects">Proyectos</Nav.Link>
-                    <Nav.Link href="#contact">Contacto</Nav.Link>
+                    <Nav.Link href="#Inicio"><span>01.</span>Inicio</Nav.Link>
+                    <Nav.Link href="#about"><span>02.</span>Acerca de mi</Nav.Link>
+                    <Nav.Link href="#experience"><span>03.</span>Experiencia</Nav.Link>
+                    <Nav.Link href="#projects"><span>04.</span>Proyectos</Nav.Link>
+                    <Nav.Link href="#contact"><span>05.</span>Contacto</Nav.Link>
                 </Nav>
+                <a target="_blank" href='/cv-agustinchinchilla.pdf' download rel="noopener noreferrer" className='btnHeaderCv'>Descargar CV</a>
             </Navbar.Collapse>
         </Navbar>
 
