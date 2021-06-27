@@ -81,4 +81,25 @@
     .navRigth{
         display: none;
     }
+        .fa-linkedin{
+        margin-top: 20px;
+        font-size: 5vw;
+
+    }
+    .fa-github-square{
+        margin-top: 20px;
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 425px){
+     .fa-linkedin{
+        margin-top: 20px;
+        font-size: 7vw;
+
+    }
+    .fa-github-square{
+        margin-top: 20px;
+        font-size: 7vw;
+    }
 }

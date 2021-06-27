@@ -49,8 +49,12 @@
     line-height: 1;
     text-decoration: none;
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: 15px;
 }
+
+   .containerIconsFooter{
+        margin-top: 10px;
+    }
 
 @media(max-width: 800px){
    
@@ -66,10 +70,8 @@
 }
 
 
-@media(max-width:490px){
-
-        
-        .contacto {
+@media(max-width:490px){   
+      .contacto {
         height: 30vw;
     }
 
@@ -79,6 +81,7 @@
      .titleandNumberContact > p{
             font-size: 20px;
     }
+ 
 }
 
 @media(max-width:375px){

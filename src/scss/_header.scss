@@ -53,14 +53,32 @@ header{
     cursor: pointer;
     display: inline-block;
 }
-.navbar-collapse{
+  .navbar-collapse{
     justify-content: space-between;
 }
+.fixed-top{
+    padding: 10px 28px;
+}
+
+@media(max-width:800px){
+    .navbar-collapse{
+    padding: 33px;
+}
+
+}
+
+@media(max-width:600px){
+.logo{
+    width: 20vw;
+}
+}
+
+
 @media(max-width:375px){
     .navbar-brand{
         margin-left: 17px;
     }
     .logo{
-    width: 15vw;
+    width: 25vw;
 }
 }

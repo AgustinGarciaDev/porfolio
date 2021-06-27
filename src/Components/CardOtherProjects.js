@@ -15,7 +15,6 @@ const CardOtherProjects = ({ project: { title, description, tecnology, gitHub, l
                         <a target="_blank" rel="noopener noreferrer" href={gitHub}>
                             <i className="fab fa-github-alt"></i>
                         </a>
-
                     }
                 </div>
             </div>

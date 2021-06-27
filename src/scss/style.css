@@ -76,11 +76,22 @@ header {
 .navbar-collapse {
   justify-content: space-between; }
 
+.fixed-top {
+  padding: 10px 28px; }
+
+@media (max-width: 800px) {
+  .navbar-collapse {
+    padding: 33px; } }
+
+@media (max-width: 600px) {
+  .logo {
+    width: 20vw; } }
+
 @media (max-width: 375px) {
   .navbar-brand {
     margin-left: 17px; }
   .logo {
-    width: 15vw; } }
+    width: 25vw; } }
 
 h1, h2, h3, h5, h6, p {
   font-weight: 600;
@@ -227,7 +238,21 @@ main {
   .navLeft {
     display: none; }
   .navRigth {
-    display: none; } }
+    display: none; }
+  .fa-linkedin {
+    margin-top: 20px;
+    font-size: 5vw; }
+  .fa-github-square {
+    margin-top: 20px;
+    font-size: 5vw; } }
+
+@media (max-width: 425px) {
+  .fa-linkedin {
+    margin-top: 20px;
+    font-size: 7vw; }
+  .fa-github-square {
+    margin-top: 20px;
+    font-size: 7vw; } }
 
 .containerAbout {
   max-width: 900px;
@@ -692,7 +717,10 @@ main {
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
-  margin-top: 50px; }
+  margin-top: 15px; }
+
+.containerIconsFooter {
+  margin-top: 10px; }
 
 @media (max-width: 800px) {
   .containerTextContact > h3 {
