@@ -20,7 +20,7 @@ const MoreProjects = () => {
             title: 'Porfolio V1',
             description: 'Proyecto personal con el fin de poder mostrar mis habilidades y proyectos realizados en mi carrera profesional.',
             tecnology: ['Javascript', 'React',],
-            gitHub: 'https://github.com/',
+            gitHub: 'https://github.com/AgustinGarciaDev/porfolio',
         },
         {
             title: 'Spanish Learn And Travel',
