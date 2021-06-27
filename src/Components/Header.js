@@ -1,6 +1,5 @@
 import { useRef, useEffect } from "react";
 import { gsap } from 'gsap'
-import { Link } from "react-router-dom";
 import { Navbar, Nav, } from "react-bootstrap";
 const Header = () => {
 
@@ -19,7 +18,7 @@ const Header = () => {
     }, [])
     return (
 
-        <Navbar ref={header} className="fixed-top " collapseOnSelect expand="lg">
+        <Navbar ref={header} className="fixed-top  navbar-dark " collapseOnSelect expand="lg">
             <Navbar.Brand href="#home">
                 <img className="logo" src="https://user-images.githubusercontent.com/66225450/122686877-f3097300-d1e9-11eb-93c2-1c18710706e8.png" alt="" />
             </Navbar.Brand>

@@ -5,11 +5,8 @@ import NavBarLeft from './Components/NavBarLeft';
 import NavBarRigth from './Components/NavBarRigth'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/style.css'
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-import About from './Components/About';
-import Projects from './Components/Projects';
-import Work from './Components/Work';
-import Contact from './Components/Contact';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 const App = () => {
 
   return (

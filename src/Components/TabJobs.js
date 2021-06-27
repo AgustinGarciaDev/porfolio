@@ -10,11 +10,11 @@ const TabJobs = () => {
             title: 'Proyectos Full Stack MERN',
             descripction: 'En el bootcamp de mindHub adquire los conocimientos del stack mern con los cuales desarrole los siguientes proyectos:',
             item: [
-                { name: 'myTinerary', id: '#mytinerary', description: 'Aplicación web de viajes' },
-                { name: 'myTinerary App', id: '#mytineraryapp', description: 'Aplicación movil de myTinerary' },
-                { name: 'Explore', id: '#explore', description: 'Aplicación  web de e-commerce' },
-                { name: 'Explore App', id: '#exploreapp', description: 'Aplicación  web de e-commerce' },
-                { name: 'MindTrainer', id: '#mindtrainer', description: 'Aplicación  web de cursos online' },
+                { name: 'myTinerary', id: '#mytinerary', description: '' },
+                { name: 'myTinerary App', id: '#mytineraryapp', description: '' },
+                { name: 'Explore', id: '#explore', description: '' },
+                { name: 'Explore App', id: '#exploreapp', description: '' },
+                { name: 'MindTrainer', id: '#mindtrainer', description: '' },
             ],
             key: 'first',
             date: 'Febrero-2021'
@@ -47,8 +47,8 @@ const TabJobs = () => {
             return (
                 <li key={index}>
                     <span className="containerItemsExperience">
-                        <a href={item.id}>{item.name}:</a>
-                        <p>{item.description}</p>
+                        <a href={item.id}>{item.name}</a>
+                        {/*   <p className="titleDescripcionTabJob">{item.description}</p> */}
                     </span>
                 </li>
             )

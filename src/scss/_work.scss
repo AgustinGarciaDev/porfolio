@@ -65,6 +65,7 @@
     flex-wrap: wrap;
     padding: 0;
     margin-top: 10px;
+    flex-direction: column;
 }
 @media (max-width: 900px){
     .jobs{
@@ -90,13 +91,21 @@
    }
 }
 
+@media(max-width:521px){
+    .jobs {
+    height: 8%;
+}
+
+.titleDescripcionTabJob{
+    font-weight: 400;
+}
+}
 
 @media (max-width: 475px){
     .titleandNumber::after{
         width: 110px;
     }
     .jobs{
-
       height: 7%;
     }
    .tab-content {
@@ -108,4 +117,12 @@
    .col-sm-9{
        width: 100%;
    }
+}
+
+@media (max-width: 452px){
+ 
+    .jobs{
+      height: 8%;
+    }
+
 }

@@ -66,7 +66,7 @@
     padding: 7px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
 .otherContainer{
         height: 31vw;
     width: 39vw;
@@ -102,7 +102,7 @@
     }
 }
 
-@media(max-width:460px){
+@media(max-width:560px){
     .otherContainer {
     height: 60vw;
     width: 82vw;
@@ -119,8 +119,21 @@
 
 }
 
-@media(max-width:375px){
-      .otherContainer p {
+
+
+@media(max-width:421px){
+   .otherContainer {
+    height: 64vw;
+    width: 87vw;
+}
+   
+    .otherContainer p {
     font-size: 14px;
+}
+.otherContainer h3 {
+    font-size: 20px;
+}
+.otherContainer > ul > li {
+    padding: 3px;
 }
 }

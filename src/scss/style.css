@@ -353,7 +353,8 @@ main {
   font-weight: 200;
   flex-wrap: wrap;
   padding: 0;
-  margin-top: 10px; }
+  margin-top: 10px;
+  flex-direction: column; }
 
 @media (max-width: 900px) {
   .jobs {
@@ -371,6 +372,12 @@ main {
   .col-sm-9 {
     width: 100%; } }
 
+@media (max-width: 521px) {
+  .jobs {
+    height: 8%; }
+  .titleDescripcionTabJob {
+    font-weight: 400; } }
+
 @media (max-width: 475px) {
   .titleandNumber::after {
     width: 110px; }
@@ -382,6 +389,10 @@ main {
     font-size: 21px; }
   .col-sm-9 {
     width: 100%; } }
+
+@media (max-width: 452px) {
+  .jobs {
+    height: 8%; } }
 
 .projectContainer {
   /*    margin: 0px auto; */
@@ -567,7 +578,7 @@ main {
 .otherContainer > ul > li {
   padding: 7px; }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .otherContainer {
     height: 31vw;
     width: 39vw; }
@@ -591,7 +602,7 @@ main {
   .otherContainer p {
     font-size: 20px; } }
 
-@media (max-width: 460px) {
+@media (max-width: 560px) {
   .otherContainer {
     height: 60vw;
     width: 82vw; }
@@ -602,9 +613,19 @@ main {
   .fa-github-alt {
     font-size: 5vw; } }
 
-@media (max-width: 375px) {
+@media (max-width: 421px) {
+  .otherContainer {
+    height: 64vw;
+    width: 87vw; }
   .otherContainer p {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .otherContainer h3 {
+    font-size: 20px; }
+  .otherContainer > ul > li {
+    padding: 3px; } }
+
+.contacto {
+  padding: 40px 0; }
 
 .titleandNumberContact {
   display: flex;
@@ -662,6 +683,16 @@ main {
   .containerTextContact {
     padding: 20px; } }
 
+@media (max-width: 490px) {
+  .contacto {
+    height: 30vw; }
+  .titleandNumberContact > span {
+    font-size: 15px; }
+  .titleandNumberContact > p {
+    font-size: 20px; } }
+
 @media (max-width: 375px) {
   .titleandNumber::after {
-    width: 100px; } }
+    width: 100px; }
+  .titleandNumberContact > p {
+    font-size: 15px; } }
