@@ -374,7 +374,9 @@ main {
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #10FAF4; }
+  background-color: #10FAF4;
+  padding: 0;
+  margin: 0; }
 
 .tab-content {
   margin-left: 8vw; }
@@ -397,6 +399,9 @@ main {
 .containerItemsExperience {
   display: flex;
   align-items: center; }
+
+.nav-pills .nav-link {
+  padding: 0; }
 
 .containerJobDescription > ul {
   list-style: none;
@@ -433,6 +438,14 @@ main {
     font-weight: 400; } }
 
 @media (max-width: 475px) {
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #10FAF4;
+    padding: 0;
+    margin: 0;
+    font-size: 16px; }
+  .nav-pills .nav-link {
+    font-size: 16px; }
   .titleandNumber::after {
     width: 110px; }
   .jobs {
