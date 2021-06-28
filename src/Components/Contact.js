@@ -4,7 +4,7 @@ const Contact = () => {
             <div className="titleSectionContact">
                 <div className="titleandNumberContact">
                     <span >.04</span>
-                    <p>¿Cual es el siguiente paso?</p>
+                    <p>¿Cuál es el siguiente paso?</p>
                 </div>
             </div>
             <div className="containerTextContact">

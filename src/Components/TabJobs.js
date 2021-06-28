@@ -8,7 +8,7 @@ const TabJobs = () => {
     const jobs = [
         {
             title: 'Proyectos Full Stack MERN',
-            descripction: 'En el bootcamp de mindHub adquire los conocimientos del stack mern con los cuales desarrole los siguientes proyectos:',
+            descripction: 'En el bootcamp de mindHub adquirí los conocimientos del stack mern con los cuales desarrole los siguientes proyectos:',
             item: [
                 { name: 'myTinerary', id: '#mytinerary', description: '' },
                 { name: 'myTinerary App', id: '#mytineraryapp', description: '' },
@@ -21,7 +21,7 @@ const TabJobs = () => {
         },
         {
             title: 'Creación de páginas web con WordPress',
-            descripction: 'En mi experiencia con este CRM, realice distintos proyectos tanto personales como para clientes desde ecommerces, academias online, lading page, blogs, coorporativos entre otros. Algunos de mis ultimos proyectos',
+            descripction: 'En mi experiencia con este CMS, realice distintos proyectos tanto personales como para clientes desde ecommerces, academias online, lading page, blogs, coorporativos entre otros. Algunos de mis ultimos proyectos',
             item: [
                 { name: 'Spanish Learn and Travel', description: 'Academia online', id: 'https://spanishlearnandtravel.com/' },
                 { name: 'Academia Claxon learning', description: 'Academia online', id: 'https://claxonlearning.com/' },

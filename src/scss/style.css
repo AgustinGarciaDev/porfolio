@@ -22,8 +22,18 @@
   p {
     font-size: 20px; } }
 
-body {
-  background-color: #0A192F; }
+.light {
+  --theme-color: #474545;
+  --theme-page-background: #FFF;
+  --theme-page-text: #111; }
+
+.dark {
+  --theme-color: $slate;
+  --theme-page-background: #0A192F;
+  --theme-page-text: #FFF; }
+
+.homeContainer {
+  background-color: var(--theme-page-background); }
 
 header {
   padding: 15px;
@@ -731,8 +741,6 @@ main {
     padding: 20px; } }
 
 @media (max-width: 490px) {
-  .contacto {
-    height: 30vw; }
   .titleandNumberContact > span {
     font-size: 15px; }
   .titleandNumberContact > p {

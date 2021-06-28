@@ -4,14 +4,14 @@ const MoreProjects = () => {
     const projects = [
         {
             title: 'PetShop',
-            description: 'E-commerce realiza como proyecto en el bootcamp . Para la obtención de los datos consume una api de productos.',
+            description: 'E-commerce realiza como proyecto en el bootcamp MindHub 2021. Para la obtención de los datos consume una api de productos.',
             tecnology: ['Html', 'Css', 'Bootstrap', 'Javascript', 'Sass'],
             gitHub: 'https://github.com/AgustinGarciaDev/petshop-chinchilla',
             link: 'https://petshopbarracas.netlify.app/index.html',
         },
         {
             title: 'Tgif',
-            description: 'Pagina web dinámica como proyecto en el bootcamp. Que consume la API  de ProPublica para la obtención de los datos.',
+            description: 'Página web dinámica como proyecto en el bootcamp MindHub 2021. Que consume la API  de ProPublica para la obtención de los datos.',
             tecnology: ['Html', 'Css', 'Bootstrap', 'Javascript'],
             gitHub: 'https://github.com/AgustinGarciaDev/proyectosenator',
             link: 'https://agustingarciadev.github.io/proyectosenator/',
@@ -24,14 +24,14 @@ const MoreProjects = () => {
         },
         {
             title: 'Spanish Learn And Travel',
-            description: 'Academia de español multilenguaje. Realizada para un cliente de España. Proyecto freelancer',
+            description: 'Academia de español multilenguaje. Realizada para un cliente de España. Freelancer',
             tecnology: ['Wordpress'],
             link: 'https://spanishlearnandtravel.com/',
         },
         {
             title: 'Academia Claxon Learning',
-            description: 'Academia de ingles con sistema de reserva de clases  y con un plugin  LMS para cursos online.',
-            tecnology: ['Wordpress', 'Woocommerce Booking', 'Sensei'],
+            description: 'Academia de inglés con sistema de reserva de clases  y con un plugin  LMS para cursos online.',
+            tecnology: ['Wordpress', 'Woocommerce', 'Sensei'],
             link: 'https://claxonlearning.com/',
         },
         {

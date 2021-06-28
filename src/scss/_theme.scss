@@ -1,0 +1,11 @@
+.light {
+    --theme-color: #474545;
+    --theme-page-background: #FFF;
+    --theme-page-text: #111;
+}
+
+.dark {
+    --theme-color: $slate;
+    --theme-page-background: #0A192F;
+    --theme-page-text: #FFF;
+}
