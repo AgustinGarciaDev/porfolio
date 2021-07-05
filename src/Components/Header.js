@@ -1,10 +1,12 @@
 import { useRef, useEffect } from "react";
 import { gsap } from 'gsap'
 import { Navbar, Nav, } from "react-bootstrap";
+import ChangeLenguage from "./ChangeLenguage";
+import { useTranslation } from 'react-i18next'
 const Header = () => {
 
     const header = useRef(null)
-
+    const { t } = useTranslation()
     useEffect(() => {
         gsap.from(header.current, {
             x: '-100px',
@@ -25,33 +27,18 @@ const Header = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="#inicio"><span>01.</span>Inicio</Nav.Link>
-                    <Nav.Link href="#about"><span>02.</span>Acerca de mi</Nav.Link>
-                    <Nav.Link href="#experience"><span>03.</span>Experiencia</Nav.Link>
-                    <Nav.Link href="#projects"><span>04.</span>Proyectos</Nav.Link>
-                    <Nav.Link href="#contact"><span>05.</span>Contacto</Nav.Link>
+                    <Nav.Link href="#inicio"><span>01.</span>{t('text.header.one')}</Nav.Link>
+                    <Nav.Link href="#about"><span>02.</span>{t('text.header.two')}</Nav.Link>
+                    <Nav.Link href="#experience"><span>03.</span>{t('text.header.three')}</Nav.Link>
+                    <Nav.Link href="#projects"><span>04.</span>{t('text.header.four')}</Nav.Link>
+                    <Nav.Link href="#contact"><span>05.</span>{t('text.header.five')}</Nav.Link>
                 </Nav>
-                <a target="_blank" href='/assets/cv-agustinchinchilla.pdf' download rel="noopener noreferrer" className='btnHeaderCv'>Descargar CV</a>
+                <div className="containerBtnAndSwitch">
+                    <a target="_blank" href='/assets/cv-agustinchinchilla.pdf' download rel="noopener noreferrer" className='btnHeaderCv'>{t('text.header.six')}</a>
+                    <ChangeLenguage />
+                </div>
             </Navbar.Collapse>
         </Navbar>
-
-        /*     
-            <header ref={header}>
-                <div>
-               
-                </div>
-                <nav className="containerItemsNav">
-                    <ul>
-                        <a heref="#home"><li>Inicio</li></a>
-                        <a href="#section"><li>Acerca de mi</li></a>
-                        <a href="#experiencie"><li>Experiencia</li></a>
-                        <a href="#word"><li>Trabajos</li></a>
-                        <a href="#word"><li>Contacto</li></a>
-                    </ul>
-                    <button>Curriculum</button>
-                </nav>
-            </header>
-        ) */
 
     )
 }

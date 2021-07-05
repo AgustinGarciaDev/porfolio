@@ -1,11 +1,11 @@
 import { useRef, useEffect } from "react";
 import { gsap } from 'gsap'
-
+import { useTranslation } from 'react-i18next'
 const Hero = () => {
 
     const title = useRef()
     const containerHero = useRef()
-
+    const { t } = useTranslation()
     useEffect(() => {
         gsap.from(title.current, {
 
@@ -34,12 +34,10 @@ const Hero = () => {
             <div ref={containerHero}>
                 <h2 className="subTitle">Full Stack MERN lover  {`${'<3'}`} </h2>
                 <p className="textHero">
-                    ¡Bienvenidx! Gracias por interesarte en mi perfil. <br /> Soy un  desarrollador Full Stack MERN & Mobile que reside en la ciudad
-                    de Buenos Aires y está en búsqueda de nuevos desafíos. Espero disfrutes los trabajos
-                    que he seleccionado para este porfolio.
+                    {t('text.hero')}
                 </p>
                 <a href="#contact" className="btnHero">
-                    Ponete en contacto
+                    {t('text.hero.btn')}
                 </a>
             </div>
         </section>

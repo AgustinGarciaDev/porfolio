@@ -2,10 +2,11 @@ import { gsap } from 'gsap'
 import { useRef } from "react"
 import { useEffect } from "react"
 import ScrollTrigger from "gsap/ScrollTrigger";
-
+import { useTranslation } from 'react-i18next'
 const About = () => {
 
     const titleNumer = useRef(null)
+    const { t } = useTranslation()
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
@@ -28,17 +29,17 @@ const About = () => {
             <div ref={titleNumer} className="titleSection">
                 <div className="titleandNumber">
                     <span >.01</span>
-                    <p>Acerca de mí</p>
+                    <p>{t('text.header.two')}</p>
                 </div>
                 <div></div>
             </div>
             <article className="containertextAndPhoto">
                 <div>
                     <p className="textAbout">
-                        Soy un joven apasionado por el desarrollo y diseño de aplicaciones web y móviles, con gran capacidad para aprender haciendo y autónomamente, con ansias de grandes desafíos, que se encuentra en búsqueda de trabajo principalmente remoto (o dispuesto a reubicación). He finalizado recientemente un coding bootcamp de Full Stack MERN.
+                        {t('text.aboutme')}
                     </p>
                     <p className="textAbout">
-                        Tecnologías que he utilizado recientemente:
+                        {t('text.technology')}
                     </p>
                     <div className="skills">
                         <ul >

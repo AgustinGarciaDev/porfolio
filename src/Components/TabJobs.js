@@ -1,14 +1,14 @@
 import { Tab, Nav, Col, Row } from "react-bootstrap"
-
+import { useTranslation } from 'react-i18next'
 
 const TabJobs = () => {
 
-
+    const { t } = useTranslation()
 
     const jobs = [
         {
-            title: 'Proyectos Full Stack MERN',
-            descripction: 'En el bootcamp de mindHub adquirí los conocimientos del stack mern con los cuales desarrole los siguientes proyectos:',
+            title: 'text.experience.title.one',
+            descripction: 'text.experience.description.one',
             item: [
                 { name: 'myTinerary', id: '#mytinerary', description: '' },
                 { name: 'myTinerary App', id: '#mytineraryapp', description: '' },
@@ -20,8 +20,8 @@ const TabJobs = () => {
             date: 'Febrero-2021'
         },
         {
-            title: 'Creación de páginas web con WordPress',
-            descripction: 'En mi experiencia con este CMS, realice distintos proyectos tanto personales como para clientes desde ecommerces, academias online, lading page, blogs, coorporativos entre otros. Algunos de mis ultimos proyectos',
+            title: 'text.experience.title.two',
+            descripction: 'text.experience.description.two',
             item: [
                 { name: 'Spanish Learn and Travel', description: 'Academia online', id: 'https://spanishlearnandtravel.com/' },
                 { name: 'Academia Claxon learning', description: 'Academia online', id: 'https://claxonlearning.com/' },
@@ -31,8 +31,8 @@ const TabJobs = () => {
             date: 'May- 2018',
         },
         {
-            title: 'Seo',
-            descripction: 'He realizado en varias web para clientes optimización web/blog, keywords research y estrategia decontenido',
+            title: 'text.experience.title.three',
+            descripction: 'text.experience.title.description.three',
             item: [],
             key: 'three',
             date: 'May- 2018',
@@ -61,10 +61,10 @@ const TabJobs = () => {
                 <Col sm={3}>
                     <Nav variant="pills" className="flex-column">
                         <Nav.Item>
-                            <Nav.Link className="btnTabsJobs" eventKey="first">Experiencia en proyectos</Nav.Link>
+                            <Nav.Link className="btnTabsJobs" eventKey="first">{t('text.tab.experience.one')}</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="second">Desarrollador Wordpress</Nav.Link>
+                            <Nav.Link eventKey="second">{t('text.tab.experience.two')}</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey="three">Seo</Nav.Link>
@@ -77,9 +77,9 @@ const TabJobs = () => {
                             return (
                                 <Tab.Pane key={job.key} eventKey={job.key}>
                                     <div className='containerJobDescription'>
-                                        <h2>{job.title}</h2>
+                                        <h2>{t(job.title)}</h2>
                                         <p className="jobDate">{job.date}</p>
-                                        <p className="jobDescription"> {job.descripction}</p>
+                                        <p className="jobDescription"> {t(job.descripction)}</p>
                                         <ul> {jobItem(job.item)}</ul>
                                     </div>
                                 </Tab.Pane>

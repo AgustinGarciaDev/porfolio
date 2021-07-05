@@ -1,4 +1,7 @@
+import { useTranslation } from 'react-i18next'
 const CardOtherProjects = ({ project: { title, description, tecnology, gitHub, link } }) => {
+
+    const { t } = useTranslation()
 
     return (
         <article className="otherContainer">
@@ -19,7 +22,7 @@ const CardOtherProjects = ({ project: { title, description, tecnology, gitHub, l
                 </div>
             </div>
             <h3>{title}</h3>
-            <p>{description}</p>
+            <p>{t(description)}</p>
             <ul>
                 {tecnology.map((item, index) => <li key={index}>{item}</li>)}
             </ul>

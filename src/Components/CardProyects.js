@@ -1,4 +1,6 @@
+import { useTranslation } from 'react-i18next'
 const CardProjects = ({ project: { id, title, description, tecnology, url, linkWeb, gitHubLink } }) => {
+    const { t } = useTranslation()
 
     return (
         <article id={id} className='cardProject'>
@@ -6,10 +8,10 @@ const CardProjects = ({ project: { id, title, description, tecnology, url, linkW
                 <div className='colorCover'></div>
             </div>
             <div className="containerTextProjects">
-                <p>Proyecto destacado</p>
+                <p>{t('text.proyect.subtitleAbove')}</p>
                 <h5>{title}</h5>
                 <div className="descriptionProject">
-                    <p>{description}</p>
+                    <p>{t(description)}</p>
                 </div>
                 <ul>
                     {tecnology.map((item, index) => <li key={index} >{item}</li>)}

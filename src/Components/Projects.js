@@ -1,11 +1,12 @@
 import CardProjects from "./CardProyects"
+import { useTranslation } from 'react-i18next'
 const Projects = () => {
-
+    const { t } = useTranslation()
     const projects = [
         {
             title: 'myTinerary',
             id: 'mytinerary',
-            description: 'Aplicación web construida en el backend con Node, y el frontend con React js. Para manejar su estado global utilicé Redux. My Tinerary fue el resultado de un sprin de 5 semanas realizado con la metodología SCRUM.',
+            description: 'text.proyect.description.one',
             tecnology: ['Node', 'React', 'Mongoose', 'Redux', 'Javascript', 'Express', 'MongoDB'],
             url: 'https://user-images.githubusercontent.com/66225450/122659237-6361b700-d14c-11eb-9b99-648d4189bf97.png',
             linkWeb: 'https://my-tinerary2021.herokuapp.com/',
@@ -14,7 +15,7 @@ const Projects = () => {
         {
             title: 'myTinerary App',
             id: 'mytineraryapp',
-            description: 'Aplicación móvil realizada con react native cuenta con las funcionales que la versión web como: consumo de api, sistema de comentarios y like , sistema de usuarios a traves de aplicación o con Facebook.',
+            description: 'text.proyect.description.five',
             tecnology: ['Node', 'React Native', 'Mongoose', 'Redux', 'Javascript', 'Express', 'MongoDB'],
             url: ' https://user-images.githubusercontent.com/66225450/122684198-699e7480-d1da-11eb-9d8f-7342b3258b4c.png',
             gitHubLink: 'https://github.com/AgustinGarciaDev/appMyTinerary'
@@ -23,7 +24,7 @@ const Projects = () => {
         {
             title: 'Explore',
             id: 'explore',
-            description: 'E-commerce desarrollada en un grupo  con la temática de una tienda de juguetes sexuales. Fue desarrollada en 2 semanas donde fui el líder de equipo llevando a cabo la responsabilidad de un producto terminado y profesional.',
+            description: 'text.proyect.description.two',
             tecnology: ['Node', 'React', 'Mongoose', 'Redux', 'Javascript', 'Express', 'MongoDB'],
             url: 'https://user-images.githubusercontent.com/66225450/122683427-753b6c80-d1d5-11eb-970f-d8ef800accef.png',
             linkWeb: 'https://explore-2021.herokuapp.com/',
@@ -32,7 +33,7 @@ const Projects = () => {
         {
             title: 'Explore App',
             id: 'exploreapp',
-            description: 'Aplicación móvil realizada con react native, fue desarrollada en las mismas dos semanas que la e-commerce. Se realizaron las 2 en paralelo. Cuenta con todas las funcionalidades que su versión web.',
+            description: 'text.proyect.description.three',
             tecnology: ['Node', 'React', 'Mongoose', 'Redux', 'Javascript', 'Express', 'MongoDB'],
             url: 'https://user-images.githubusercontent.com/66225450/122684055-b2096280-d1d9-11eb-9fb3-ddc42abb458c.png',
             gitHubLink: 'https://github.com/AgustinGarciaDev/exploreApp',
@@ -40,7 +41,7 @@ const Projects = () => {
         {
             title: 'MindTrainer',
             id: 'mindtrainer',
-            description: 'Aplicación web de cursos online con la temática personal trainer. Desarrollada en grupo en una semana donde fui líder de equipo para llevar a cabo el desarrollo de la misma.',
+            description: 'text.proyect.description.four',
             tecnology: ['Node', 'React', 'Mongoose', 'Redux', 'Javascript', 'Express', 'MongoDB'],
             url: 'https://user-images.githubusercontent.com/66225450/122683559-58ebff80-d1d6-11eb-9cbe-157aa32d63f0.png',
             linkWeb: 'https://trained-mind.herokuapp.com/',
@@ -55,7 +56,7 @@ const Projects = () => {
             <div className="titleSection">
                 <div className="titleandNumber">
                     <span>.03</span>
-                    <p>Mis proyectos</p>
+                    <p>{t('text.proyect')}</p>
                 </div>
                 <div></div>
             </div>
