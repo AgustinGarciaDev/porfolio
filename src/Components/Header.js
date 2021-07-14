@@ -34,7 +34,7 @@ const Header = () => {
                     <Nav.Link href="#contact"><span>05.</span>{t('text.header.five')}</Nav.Link>
                 </Nav>
                 <div className="containerBtnAndSwitch">
-                    <a target="_blank" href='/assets/cv-agustinchinchilla.pdf' download rel="noopener noreferrer" className='btnHeaderCv'>{t('text.header.six')}</a>
+                    <a target="_blank" href='/assets/cv-agustinchinchillagarcia.pdf' download rel="noopener noreferrer" className='btnHeaderCv'>{t('text.header.six')}</a>
                     <ChangeLenguage />
                 </div>
             </Navbar.Collapse>
