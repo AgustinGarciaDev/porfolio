@@ -1,102 +1,99 @@
-.homeContainer{
-    background-color:var( --theme-page-background);
+.homeContainer {
+  background-color: var(--theme-page-background);
 }
-header{
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
+header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
 }
-.containerItemsNav{
-        display: flex;
-    align-items: center;
-}
-
-.containerItemsNav >button{
-    color: $green;
-    background-color: transparent;
-    border: 1px solid $green;
-    border-radius: 5px;
-    font-size: 17px;
-    padding: 1rem 1rem;
-    font-family: $mono;
-    line-height: 1;
-    text-decoration: none;
-    cursor: pointer;
-}
-.logo{
-    width: 10vw;
+.containerItemsNav {
+  display: flex;
+  align-items: center;
 }
 
-.fixed-top{
-    background: #0c2343b0;
-    backdrop-filter: blur(5px);
+.containerItemsNav > button {
+  color: $green;
+  background-color: transparent;
+  border: 1px solid $green;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 1rem 1rem;
+  font-family: $mono;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
 }
-.nav-link{
+.logo {
+  width: 10vw;
+}
+
+.fixed-top {
+  background: #0c2343b0;
+  backdrop-filter: blur(5px);
+}
+.nav-link {
   color: white !important;
   font-family: $mono;
 }
 
-.nav-link > span{
-  color: $green
-
+.nav-link > span {
+  color: $green;
 }
-.btnHeaderCv{
-    color: $green;
-    background-color: transparent;
-    border: 1px solid $green;
-    border-radius: 5px;
-    font-size: 17px;
-    padding: 0.65rem 1.75rem;
-    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-    line-height: 1;
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-block;
-    margin-right: 15px;
+.btnHeaderCv {
+  color: $green;
+  background-color: transparent;
+  border: 1px solid $green;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 0.65rem 1.75rem;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 15px;
 }
-  .navbar-collapse{
-    justify-content: space-between;
+.navbar-collapse {
+  justify-content: space-between;
 }
-.fixed-top{
-    padding: 10px 28px;
+.fixed-top {
+  padding: 10px 28px;
 }
-.containerBtnAndSwitch{
-    display: flex;
-    align-items: center;
-}
-
-.switchbtn{
-    width: 50px;
-    background-color: #ffffff00;
-    border: none;
+.containerBtnAndSwitch {
+  display: flex;
+  align-items: center;
 }
 
-@media(max-width:800px){
-    .navbar-collapse{
+.switchbtn {
+  width: 50px;
+  background-color: #ffffff00;
+  border: none;
+}
+
+@media (max-width: 800px) {
+  .navbar-collapse {
     padding: 33px;
-    }
-    .btnHeaderCv{
-     margin-bottom: 10px;
-    }
-    .containerBtnAndSwitch{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
+  }
+  .btnHeaderCv {
+    margin-bottom: 10px;
+  }
+  .containerBtnAndSwitch {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
-@media(max-width:600px){
-.logo{
+@media (max-width: 600px) {
+  .logo {
     width: 20vw;
-}
+  }
 }
 
-
-@media(max-width:375px){
-    .navbar-brand{
-        margin-left: 17px;
-    }
-    .logo{
+@media (max-width: 375px) {
+  .navbar-brand {
+    margin-left: 17px;
+  }
+  .logo {
     width: 25vw;
-}
+  }
 }

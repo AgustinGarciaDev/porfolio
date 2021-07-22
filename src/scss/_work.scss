@@ -1,148 +1,144 @@
-.jobs{
-    max-width: 700px;
-    margin: 0px auto;  
-    padding: 100px 0px;
-    height: 36vw;
+.jobs {
+  max-width: 700px;
+  margin: 0px auto;
+  padding: 100px 0px;
+  height: 36vw;
 }
-.containerTabs{
-    margin-top: 5vw;
+.containerTabs {
+  margin-top: 5vw;
 }
-.nav-pills .nav-link{
-    text-decoration: none;
-    text-decoration-skip-ink: auto;
-    position: relative;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
+.nav-pills .nav-link {
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  height: var(--tab-height);
+  padding: 0px 20px 2px;
+  border-left: 2px solid $blue;
+  background-color: transparent;
+  color: $slate;
+  font-family: $mono;
+  font-size: var(--fz-xs);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: $green;
+  padding: 0;
+  margin: 0;
+}
+.tab-content {
+  margin-left: 8vw;
+}
+.containerJobDescription h2 {
+  color: $light-slate;
+  font-family: $sfpro;
+}
+
+.jobDate {
+  font-family: $mono;
+  color: $slate;
+  margin-top: 6px;
+}
+.jobDescription {
+  color: $slate;
+  font-family: $sfpro;
+  margin-top: 10px;
+  font-weight: 400;
+}
+.containerItemsExperience {
+  display: flex;
+  align-items: center;
+}
+
+.nav-pills .nav-link {
+  padding: 0;
+}
+
+.containerJobDescription > ul {
+  list-style: none;
+  display: flex;
+  color: #ccd6f6;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 15px;
+  font-weight: 200;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 10px;
+  flex-direction: column;
+}
+@media (max-width: 900px) {
+  .jobs {
+    height: 67vw;
+  }
+  .containerJobDescription {
+    margin-left: 7vw;
+  }
+}
+
+@media (max-width: 668px) {
+  .jobs {
+    height: 95vw;
+  }
+  .tab-content {
+    margin: 20px 0;
+  }
+  .nav-pills .nav-link {
+    font-size: 21px;
+  }
+  .col-sm-9 {
     width: 100%;
-    height: var(--tab-height);
-    padding: 0px 20px 2px;
-    border-left: 2px solid $blue;
-    background-color: transparent;
-    color: $slate;
-    font-family: $mono;
-    font-size: var(--fz-xs);
-    text-align: left;
-    white-space: nowrap;
+  }
 }
 
- .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #fff;
-    background-color: $green;
-    padding: 0;
-    margin:0;
-} 
-.tab-content{
-    margin-left: 8vw;
-}
-.containerJobDescription h2{
-    color: $light-slate;
-    font-family: $sfpro;
-}
-
-.jobDate{
-     font-family: $mono;
-     color: $slate;
-     margin-top: 6px;
-
-}
-.jobDescription{
-    color: $slate;
-    font-family: $sfpro;
-    margin-top: 10px;
-    font-weight: 400;
-}
-.containerItemsExperience{
-    display: flex;
-    align-items: center;
-}
-
-.nav-pills .nav-link {
-    padding: 0;
-}
-
-.containerJobDescription > ul{
-    list-style: none;
-    display: flex;
-    color: #CCD6F6;
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-    font-size: 15px;
-    font-weight: 200;
-    flex-wrap: wrap;
-    padding: 0;
-    margin-top: 10px;
-    flex-direction: column;
-}
-@media (max-width: 900px){
-    .jobs{
-      height: 67vw;
-    }
-    .containerJobDescription{
-            margin-left: 7vw;
-    }
-}
-
-@media (max-width: 668px){
-    .jobs{
-         height: 95vw;
-    }
-   .tab-content {
-    margin: 20px 0;
-    }
-   .nav-pills .nav-link{
-     font-size: 21px;
-   }
-   .col-sm-9{
-       width: 100%;
-   }
-}
-
-@media(max-width:521px){
-  
-  
-    .jobs {
+@media (max-width: 521px) {
+  .jobs {
     height: 8%;
-}
+  }
 
-.titleDescripcionTabJob{
+  .titleDescripcionTabJob {
     font-weight: 400;
-}
+  }
 }
 
-@media (max-width: 475px){
- .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+@media (max-width: 475px) {
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
     color: #fff;
     background-color: $green;
     padding: 0;
-    margin:0;
+    margin: 0;
     font-size: 16px;
-    
-} 
+  }
 
-.nav-pills .nav-link {
+  .nav-pills .nav-link {
     font-size: 16px;
-}
-    .titleandNumber::after{
-        width: 110px;
-    }
-    .jobs{
-      height: 7%;
-    }
-   .tab-content {
+  }
+  .titleandNumber::after {
+    width: 110px;
+  }
+  .jobs {
+    height: 7%;
+  }
+  .tab-content {
     margin: 20px 0;
-    }
-   .nav-pills .nav-link{
-     font-size: 21px;
-   }
-   .col-sm-9{
-       width: 100%;
-   }
+  }
+  .nav-pills .nav-link {
+    font-size: 21px;
+  }
+  .col-sm-9 {
+    width: 100%;
+  }
 }
 
-@media (max-width: 452px){
- 
-    .jobs{
-      height: 8%;
-    }
-
+@media (max-width: 452px) {
+  .jobs {
+    height: 8%;
+  }
 }

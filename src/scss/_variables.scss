@@ -1,17 +1,18 @@
 /* Colors */
 
-$blue: #0A192F;
-$blue-light:#112240;
-$green: #10FAF4;
-$light-slate : #CCD6F6;
+$blue: #0a192f;
+$blue-light: #112240;
+$green: #10faf4;
+$light-slate: #ccd6f6;
 $slate: #8892b0;
-$shadow:rgba(2,12,27,0.7);
-$overlay:#64ffda42;
+$shadow: rgba(2, 12, 27, 0.7);
+$overlay: #64ffda42;
 
 /* Typography */
 
-$sfpro: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-$mono:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+$sfpro: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui,
+  sans-serif;
+$mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 
 /* Scrool */
 ::-webkit-scrollbar {
@@ -20,21 +21,21 @@ $mono:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $slate; 
+  background: $slate;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background:$light-slate; 
+  background: $light-slate;
 }
-@media(max-width: 800px){
-  p{
+@media (max-width: 800px) {
+  p {
     font-size: 20px;
   }
 }

@@ -1,94 +1,90 @@
-.contacto{
-    max-width: 600px;
-    margin: 0px auto 100px;
-    text-align: center;
-    padding: 100px 0px;
+.contacto {
+  max-width: 600px;
+  margin: 0px auto 100px;
+  text-align: center;
+  padding: 100px 0px;
 }
-.titleandNumberContact  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.titleandNumberContact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.titleandNumberContact> p{
-    color: $green;
-    font-family: $mono;
-    font-size: 1.5rem;
-    margin-left: 10px;
+.titleandNumberContact > p {
+  color: $green;
+  font-family: $mono;
+  font-size: 1.5rem;
+  margin-left: 10px;
 }
-.titleandNumberContact> span{
-    color: $green;
-    font-family: $mono;
-    font-size: 1.5rem;
+.titleandNumberContact > span {
+  color: $green;
+  font-family: $mono;
+  font-size: 1.5rem;
 }
-.containerTextContact{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.containerTextContact > h3{
-    color: $light-slate;
-    text-align: center;
-      font-size: clamp(20px, 3vw, 40px);
-}
-.containerTextContact > p{
-    margin: 20px 0px 0px;
-    max-width: 1000px;
-    color: $slate;
-    line-height:1.4;
-    font-weight: 400;
-    text-align: center;
+.containerTextContact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.containerTextContact >a{
-    color: $green;
-    background-color: transparent;
-    border: 1px solid $green;
-    border-radius: 5px;
-    font-size: 17px;
-    padding: 1.25rem 1.75rem;
-    font-family: $mono;
-    line-height: 1;
-    text-decoration: none;
-    cursor: pointer;
-    margin-top: 15px;
+.containerTextContact > h3 {
+  color: $light-slate;
+  text-align: center;
+  font-size: clamp(20px, 3vw, 40px);
+}
+.containerTextContact > p {
+  margin: 20px 0px 0px;
+  max-width: 1000px;
+  color: $slate;
+  line-height: 1.4;
+  font-weight: 400;
+  text-align: center;
 }
 
-   .containerIconsFooter{
-        margin-top: 10px;
-    }
-
-@media(max-width: 800px){
-   
-    .containerTextContact > h3{
-      font-size: clamp(22px, 7vw, 43px);
-    }
-    .containerTextContact > p{
-        font-size: 20px;
-    }
-    .containerTextContact{
-            padding: 20px;
-    }
+.containerTextContact > a {
+  color: $green;
+  background-color: transparent;
+  border: 1px solid $green;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 1.25rem 1.75rem;
+  font-family: $mono;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 15px;
 }
 
-
-@media(max-width:490px){   
-
-    .titleandNumberContact > span{
-            font-size: 15px;
-    }
-     .titleandNumberContact > p{
-            font-size: 20px;
-    }
- 
+.containerIconsFooter {
+  margin-top: 10px;
 }
 
-@media(max-width:375px){
-     .titleandNumber::after{ 
+@media (max-width: 800px) {
+  .containerTextContact > h3 {
+    font-size: clamp(22px, 7vw, 43px);
+  }
+  .containerTextContact > p {
+    font-size: 20px;
+  }
+  .containerTextContact {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 490px) {
+  .titleandNumberContact > span {
+    font-size: 15px;
+  }
+  .titleandNumberContact > p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .titleandNumber::after {
     width: 100px;
-    }
-      .titleandNumberContact > p{
-            font-size: 15px;
-    }
+  }
+  .titleandNumberContact > p {
+    font-size: 15px;
+  }
 }

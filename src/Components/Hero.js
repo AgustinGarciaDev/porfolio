@@ -1,47 +1,41 @@
 import { useRef, useEffect } from "react";
-import { gsap } from 'gsap'
-import { useTranslation } from 'react-i18next'
+import { gsap } from "gsap";
+import { useTranslation } from "react-i18next";
 const Hero = () => {
+  const title = useRef();
+  const containerHero = useRef();
+  const { t } = useTranslation();
+  useEffect(() => {
+    gsap.from(title.current, {
+      duration: 1.5,
+      rotate: 360,
+      repeat: 1,
+      yoyoEase: true,
+      ease: "elastic",
+    });
+    gsap.from(containerHero.current, {
+      duration: 1.5,
+      rotate: 360,
+      repeat: 1,
+      yoyoEase: true,
+      ease: "elastic",
+    });
+  }, []);
 
-    const title = useRef()
-    const containerHero = useRef()
-    const { t } = useTranslation()
-    useEffect(() => {
-        gsap.from(title.current, {
+  return (
+    <section id="inicio" className="containerHero">
+      <h1 className="titleHero" ref={title}>
+        Agustin Garcia.
+      </h1>
+      <div ref={containerHero}>
+        <h2 className="subTitle">Full Stack MERN lover {`${"<3"}`} </h2>
+        <p className="textHero">{t("text.hero")}</p>
+        <a href="#contact" className="btnHero">
+          {t("text.hero.btn")}
+        </a>
+      </div>
+    </section>
+  );
+};
 
-            duration: 1.5,
-            rotate: 360,
-            repeat: 1,
-            yoyoEase: true,
-            ease: "elastic",
-
-        })
-        gsap.from(containerHero.current, {
-
-            duration: 1.5,
-            rotate: 360,
-            repeat: 1,
-            yoyoEase: true,
-            ease: "elastic",
-        })
-    }, [])
-
-    return (
-        <section id="inicio" className="containerHero">
-            <h1 className="titleHero" ref={title}  >
-                Agustin Garcia.
-            </h1>
-            <div ref={containerHero}>
-                <h2 className="subTitle">Full Stack MERN lover  {`${'<3'}`} </h2>
-                <p className="textHero">
-                    {t('text.hero')}
-                </p>
-                <a href="#contact" className="btnHero">
-                    {t('text.hero.btn')}
-                </a>
-            </div>
-        </section>
-    )
-}
-
-export default Hero
+export default Hero;

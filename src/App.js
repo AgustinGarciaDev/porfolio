@@ -1,15 +1,14 @@
-import Header from './Components/Header';
-import Home from './Pages/Home'
-import NavBarLeft from './Components/NavBarLeft';
-import NavBarRigth from './Components/NavBarRigth'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './scss/style.css'
-import { Suspense } from 'react'
-import './i18n'
+import Header from "./Components/Header";
+import Home from "./Pages/Home";
+import NavBarLeft from "./Components/NavBarLeft";
+import NavBarRigth from "./Components/NavBarRigth";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./scss/style.css";
+import { Suspense } from "react";
+import "./i18n";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 const App = () => {
-
   return (
     <Suspense fallback={null}>
       <BrowserRouter>
@@ -27,7 +26,7 @@ const App = () => {
         </div>
       </BrowserRouter>
     </Suspense>
-  )
-}
+  );
+};
 
 export default App;

@@ -1,139 +1,135 @@
-.containerOtherProjects{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.containerOtherProjects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.otherContainer{
-    box-shadow: 0 10px 30px -15px $shadow;
-    display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    height: 20vw;
-    width: 23vw;
-    margin: 1vw;
-    padding: 2rem 1.75rem;
-    border-radius:10px;
-    background-color:$blue-light;
+.otherContainer {
+  box-shadow: 0 10px 30px -15px $shadow;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  height: 20vw;
+  width: 23vw;
+  margin: 1vw;
+  padding: 2rem 1.75rem;
+  border-radius: 10px;
+  background-color: $blue-light;
 }
 
 .otherContainer h3 {
-    color: $light-slate;
+  color: $light-slate;
 }
 
-.otherContainer p{
-    color: $slate;
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 21px;
+.otherContainer p {
+  color: $slate;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 21px;
 }
-.containerIcons{
-        display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 19vw;
+.containerIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 19vw;
 }
-.fa-external-link-alt{
-     font-size: 2vw;
-    color: white;
-    padding-left: 13px;
-    padding-right: 13px;
+.fa-external-link-alt {
+  font-size: 2vw;
+  color: white;
+  padding-left: 13px;
+  padding-right: 13px;
 }
-.fa-folder{
-     font-size: 2vw;
-    color: $green;
+.fa-folder {
+  font-size: 2vw;
+  color: $green;
 }
-.fa-github-alt{
-    font-size: 2vw;
-    color: white;
+.fa-github-alt {
+  font-size: 2vw;
+  color: white;
 }
 
 .otherContainer > ul {
-    list-style: none;
-    display: flex;
-    color: #CCD6F6;
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-    font-size: 15px;
-    font-weight: 200;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  color: #ccd6f6;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 15px;
+  font-weight: 200;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 .otherContainer > ul > li {
-    padding: 7px;
+  padding: 7px;
 }
 
-@media (max-width: 900px){
-.otherContainer{
-        height: 31vw;
+@media (max-width: 900px) {
+  .otherContainer {
+    height: 31vw;
     width: 39vw;
-}
-.fa-external-link-alt{
-     font-size: 3vw;
-}
-.fa-folder{
-     font-size: 3vw;
-}
-.fa-github-alt{
+  }
+  .fa-external-link-alt {
     font-size: 3vw;
-}
+  }
+  .fa-folder {
+    font-size: 3vw;
+  }
+  .fa-github-alt {
+    font-size: 3vw;
+  }
 
-.containerIcons{
+  .containerIcons {
     width: 32vw;
+  }
 }
-
-}
-@media (max-width: 665px){
-    .containerIcons {
-        width: 58vw;
-    }
-    .otherContainer{
-     height: 40vw;
-    width: 74vw
-    }
-    .otherContainer h3 {
+@media (max-width: 665px) {
+  .containerIcons {
+    width: 58vw;
+  }
+  .otherContainer {
+    height: 40vw;
+    width: 74vw;
+  }
+  .otherContainer h3 {
     font-size: 36px;
-    }
-    .otherContainer p{
-        font-size: 20px;
-    }
+  }
+  .otherContainer p {
+    font-size: 20px;
+  }
 }
 
-@media(max-width:560px){
-    .otherContainer {
+@media (max-width: 560px) {
+  .otherContainer {
     height: 60vw;
     width: 82vw;
-}
-.fa-external-link-alt{
-     font-size: 5vw;
-}
-.fa-folder{
-     font-size: 5vw;
-}
-.fa-github-alt{
+  }
+  .fa-external-link-alt {
     font-size: 5vw;
+  }
+  .fa-folder {
+    font-size: 5vw;
+  }
+  .fa-github-alt {
+    font-size: 5vw;
+  }
 }
 
-}
-
-
-
-@media(max-width:421px){
-   .otherContainer {
+@media (max-width: 421px) {
+  .otherContainer {
     height: 64vw;
     width: 87vw;
-}
-   
-    .otherContainer p {
+  }
+
+  .otherContainer p {
     font-size: 14px;
-}
-.otherContainer h3 {
+  }
+  .otherContainer h3 {
     font-size: 20px;
-}
-.otherContainer > ul > li {
+  }
+  .otherContainer > ul > li {
     padding: 3px;
-}
+  }
 }
