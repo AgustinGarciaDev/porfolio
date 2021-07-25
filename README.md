@@ -9,5 +9,6 @@ Link:https://agustinch.netlify.app/
 
 #Construido con 🛠️
 
-- React js -
--Sass -
+- React js
+- Sass 
+- Bootstrap
