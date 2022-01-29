@@ -12,3 +12,7 @@ Link:https://agustinch.netlify.app/
 - React js
 - Sass 
 - Bootstrap
+
+# Inspiracion para  el diseño
+
+Me inspiré para el diseño en: brittanychiang.com
