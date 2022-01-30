@@ -292,7 +292,8 @@ body {
 
 .PhotoProfile {
   width: 300px;
-  height: 300px; }
+  height: 300px;
+  border-radius: 50%; }
 
 .textAbout {
   margin: 5px 0px 0px;
@@ -305,8 +306,16 @@ body {
 .titleandNumber {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 20px; }
+
+.titleandNumber::after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #ccd6f6; }
 
 .titleandNumber p {
   color: #ccd6f6;
