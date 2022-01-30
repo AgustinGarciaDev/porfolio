@@ -27,6 +27,7 @@
     "text.proyect.description.three": "Mobile application made with React Native, it was developed in the same two weeks as the web application. Both were carried out in parallel. The mobile app has all the features of its web version.",
     "text.proyect.description.four": "Web application of online courses for personal trainers. It was a 2-week group project and I was the team leader of the group.",
     "text.proyect.description.five": "myTinerary application has the same features as its web version",
+    "text.otherProyect" : "Other projects",
     "text.otherProyect.description.one": "E-commerce carried out as a project in the MindHub 2021 bootcamp. To obtain the data, it consumes a product API.",
     "text.otherProyect.description.two": "Dynamic web page as a project in the MindHub 2021 bootcamp. It consumes the ProPublica API to obtain the data.",
     "text.otherProyect.description.three": "Personal project in order to be able to show my skills and projects carried out in my professional career.",

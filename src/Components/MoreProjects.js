@@ -1,5 +1,9 @@
 import CardOtherProjects from "./CardOtherProjects";
+import { useTranslation } from "react-i18next";
+
 const MoreProjects = () => {
+  const { t } = useTranslation();
+
   const projects = [
     {
       title: "PetShop",
@@ -25,27 +29,33 @@ const MoreProjects = () => {
       title: "Spanish Learn And Travel",
       description: "text.otherProyect.description.four",
       tecnology: ["Wordpress"],
-      link: "https://spanishlearnandtravel.com/",
     },
     {
       title: "Claxon Learning (Academy)",
       description: "text.otherProyect.description.five",
       tecnology: ["Wordpress", "Woocommerce", "Sensei"],
-      link: "https://claxonlearning.com/",
     },
     {
       title: "Somos gestión humana",
       description: "text.otherProyect.description.six",
       tecnology: ["Wordpress", "Hubspot", "Moodle"],
-      link: "https://ghcapacitacion.com/cursos/",
     },
   ];
 
   return (
     <section className="containerOtherProjects">
-      {projects.map((project, index) => (
-        <CardOtherProjects key={index} project={project} />
-      ))}
+      <div className="titleSection">
+        <div className="titleandNumber">
+          <span>.05</span>
+          <p>{t("text.otherProyect")}</p>
+        </div>
+        <div></div>
+      </div>
+      <main className="containerCardsOtherProjects">
+        {projects.map((project, index) => (
+          <CardOtherProjects key={index} project={project} />
+        ))}
+      </main>
     </section>
   );
 };

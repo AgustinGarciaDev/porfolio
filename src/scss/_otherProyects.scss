@@ -1,8 +1,14 @@
 .containerOtherProjects {
   display: flex;
+  flex-direction: column;
+}
+
+.containerCardsOtherProjects {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .otherContainer {
   box-shadow: 0 10px 30px -15px $shadow;
   display: flex;
@@ -12,7 +18,6 @@
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  // height: 20vw;
   width: 20vw;
   margin: 1vw;
   padding: 2rem 1.75rem;

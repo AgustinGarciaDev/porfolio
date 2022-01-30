@@ -304,7 +304,8 @@ body {
 
 .titleandNumber {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
 
 .titleandNumber::after {
   content: "";
@@ -608,6 +609,10 @@ body {
     margin: 32px 0; } }
 
 .containerOtherProjects {
+  display: flex;
+  flex-direction: column; }
+
+.containerCardsOtherProjects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }

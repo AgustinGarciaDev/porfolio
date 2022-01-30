@@ -11,9 +11,11 @@ const CardOtherProjects = ({
           <i className="far fa-folder"></i>
         </a>
         <div>
-          <a target="_blank" rel="noopener noreferrer" href={link}>
-            <i className="fas fa-external-link-alt"></i>
-          </a>
+          {link && (
+            <a target="_blank" rel="noopener noreferrer" href={link}>
+              <i className="fas fa-external-link-alt"></i>
+            </a>
+          )}
           {gitHub && (
             <a target="_blank" rel="noopener noreferrer" href={gitHub}>
               <i className="fab fa-github-alt"></i>

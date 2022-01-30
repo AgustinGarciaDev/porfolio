@@ -24,6 +24,7 @@
 .titleandNumber {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .titleandNumber::after {
