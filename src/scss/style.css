@@ -503,12 +503,13 @@ p {
 
 .projectContainer {
   /*    margin: 0px auto; */
-  padding: 100px 0px; }
+  padding: 100px 0px;
+  max-width: 1000px; }
 
 .cardProject {
   display: flex;
   justify-content: center;
-  margin-top: 1vw;
+  margin-top: 5vw;
   align-items: center; }
 
 .cardProject:nth-child(2n + 0) {
@@ -516,7 +517,7 @@ p {
 
 .coverProjects {
   width: 116vw;
-  height: 80vh;
+  height: 24vw;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
@@ -577,6 +578,11 @@ p {
   padding: 7px; }
 
 @media (max-width: 800px) {
+  .projectContainer {
+    padding: 0; }
+  .coverProjects {
+    height: 60vh;
+    width: 98vw; }
   .cardProject {
     flex-direction: column; }
   .colorCover {
@@ -690,7 +696,8 @@ p {
   .fa-folder {
     font-size: 3vw; }
   .fa-github-alt {
-    font-size: 3vw; }
+    font-size: 3vw;
+    margin-left: 10px; }
   .containerIcons {
     width: 32vw; } }
 
