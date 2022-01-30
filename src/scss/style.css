@@ -575,11 +575,11 @@ body {
     width: 72vw; }
   .containerTextProjects {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: auto;
     right: 0; }
   .containerTextProjects > ul {
-    justify-content: flex-start;
+    justify-content: center;
     padding: 0;
     width: auto; }
   .cardProject:nth-child(2n + 0) .containerTextProjects {

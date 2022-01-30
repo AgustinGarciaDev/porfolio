@@ -17,7 +17,7 @@ const TabJobs = () => {
       descripction: "text.experience.title.description.four",
       item: [
         {
-          name: "Backend(PHP/Framework Laravel)"
+          name: "Backend(PHP/Framework Laravel)",
         },
         {
           name: "Frontend(JS/React/Vue/Bootstrap)",
@@ -74,7 +74,7 @@ const TabJobs = () => {
       item: [],
       key: "three",
       date: "May- 2018",
-    }
+    },
   ];
 
   const jobItem = (items) => {
@@ -82,7 +82,9 @@ const TabJobs = () => {
       return (
         <li key={index}>
           <span className="containerItemsExperience">
-            <a class="linkItem" href={item.id}>{item.name}</a>
+            <a className="linkItem" href={item.id}>
+              {item.name}
+            </a>
           </span>
         </li>
       );
@@ -94,9 +96,9 @@ const TabJobs = () => {
       <Row>
         <Col sm={3}>
           <Nav variant="pills" className="flex-column">
-          <Nav.Item>
+            <Nav.Item>
               <Nav.Link className="btnTabsJobs" eventKey="four">
-              iOS Mobile Engineer
+                iOS Mobile Engineer
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -121,7 +123,6 @@ const TabJobs = () => {
         </Col>
         <Col sm={9}>
           <Tab.Content>
-            {   console.log(jobs)}
             {jobs.map((job) => {
               return (
                 <Tab.Pane key={job.key} eventKey={job.key}>
