@@ -1,12 +1,11 @@
 .projectContainer {
   /*    margin: 0px auto; */
   padding: 100px 0px;
-  max-width: 1000px;
 }
 .cardProject {
   display: flex;
   justify-content: center;
-  margin-top: 5vw;
+  margin-top: 1vw;
   align-items: center;
 }
 .cardProject:nth-child(2n + 0) {
@@ -15,9 +14,10 @@
 
 .coverProjects {
   width: 116vw;
-  height: 24vw;
+  height: 80vh;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .containerTextProjects {
@@ -85,12 +85,6 @@
 }
 
 @media (max-width: 800px) {
-  .coverProjects {
-    height: 48vw;
-    width: 80vw;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
   .cardProject {
     flex-direction: column;
   }

@@ -16,8 +16,7 @@ const Projects = () => {
         "Express",
         "MongoDB",
       ],
-      url: "https://user-images.githubusercontent.com/66225450/122659237-6361b700-d14c-11eb-9b99-648d4189bf97.png",
-      linkWeb: "https://my-tinerary2021.herokuapp.com/",
+      url: "https://user-images.githubusercontent.com/66225450/121558589-2c710000-c9ec-11eb-84e3-67c8c5c83323.gif",
       gitHubLink: "https://github.com/AgustinGarciaDev/mytinerary-chinchilla",
     },
     {
@@ -33,7 +32,7 @@ const Projects = () => {
         "Express",
         "MongoDB",
       ],
-      url: " https://user-images.githubusercontent.com/66225450/122684198-699e7480-d1da-11eb-9d8f-7342b3258b4c.png",
+      url: "https://user-images.githubusercontent.com/66225450/151716532-0578ff5a-e769-4e3a-b0f5-5ea228e158db.gif",
       gitHubLink: "https://github.com/AgustinGarciaDev/appMyTinerary",
     },
 
@@ -50,8 +49,7 @@ const Projects = () => {
         "Express",
         "MongoDB",
       ],
-      url: "https://user-images.githubusercontent.com/66225450/122683427-753b6c80-d1d5-11eb-970f-d8ef800accef.png",
-      linkWeb: "https://explore-2021.herokuapp.com/",
+      url: "https://user-images.githubusercontent.com/66225450/121626821-873a4400-ca4c-11eb-932d-38bbd41b2c78.gif",
       gitHubLink: "https://github.com/AgustinGarciaDev/Explore-e-commerce",
     },
     {
@@ -67,7 +65,7 @@ const Projects = () => {
         "Express",
         "MongoDB",
       ],
-      url: "https://user-images.githubusercontent.com/66225450/122684055-b2096280-d1d9-11eb-9fb3-ddc42abb458c.png",
+      url: "/assets/gif/AppNativeVideoEcommerce.gif",
       gitHubLink: "https://github.com/AgustinGarciaDev/exploreApp",
     },
     {
@@ -83,9 +81,22 @@ const Projects = () => {
         "Express",
         "MongoDB",
       ],
-      url: "https://user-images.githubusercontent.com/66225450/122683559-58ebff80-d1d6-11eb-9cbe-157aa32d63f0.png",
-      linkWeb: "https://trained-mind.herokuapp.com/",
+      url: "https://user-images.githubusercontent.com/66225450/121586638-41f52280-ca0a-11eb-8f2b-131d4f3a35f7.gif",
       gitHubLink: "https://explore-2021.herokuapp.com/",
+    },
+    {
+      title: "Clon Crunchyroll",
+      id: "appVideo",
+      description: "text.proyect.description.four",
+      tecnology: ["React Native CLI", "Javascript"],
+      url: "/assets/gif/AppNativeVideo.gif",
+    },
+    {
+      title: "Music App",
+      id: "appMusic",
+      description: "text.proyect.description.four",
+      tecnology: ["SwiftUI", "Alamofire", "SwiftPM", "Core Data"],
+      url: "/assets/gif/SwiftAppMusic.gif",
     },
   ];
 

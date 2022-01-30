@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <>
       {/*   <button onClick={btnTheme} >change theme</button> */}
-      <main className={`homeContainer ${theme}`}>
+      <main className="homeContainer">
         <Hero />
         <About />
         <Work />

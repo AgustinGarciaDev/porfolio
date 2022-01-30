@@ -6,6 +6,33 @@ const TabJobs = () => {
 
   const jobs = [
     {
+      title: "iOS Mobile Engineer",
+      descripction: "text.experience.title.description.five",
+      item: [],
+      key: "four",
+      date: "Actualmente",
+    },
+    {
+      title: "Desarrollador web Full Stack",
+      descripction: "text.experience.title.description.four",
+      item: [
+        {
+          name: "Backend(PHP/Framework Laravel)"
+        },
+        {
+          name: "Frontend(JS/React/Vue/Bootstrap)",
+        },
+        {
+          name: "Test(PHPUnit)",
+        },
+        {
+          name: "CD/CI(Docker/GitHub Integrations)",
+        },
+      ],
+      key: "five",
+      date: "Agosto- 2021",
+    },
+    {
       title: "text.experience.title.one",
       descripction: "text.experience.description.one",
       item: [
@@ -47,7 +74,7 @@ const TabJobs = () => {
       item: [],
       key: "three",
       date: "May- 2018",
-    },
+    }
   ];
 
   const jobItem = (items) => {
@@ -55,8 +82,7 @@ const TabJobs = () => {
       return (
         <li key={index}>
           <span className="containerItemsExperience">
-            <a href={item.id}>{item.name}</a>
-            {/*   <p className="titleDescripcionTabJob">{item.description}</p> */}
+            <a class="linkItem" href={item.id}>{item.name}</a>
           </span>
         </li>
       );
@@ -68,6 +94,16 @@ const TabJobs = () => {
       <Row>
         <Col sm={3}>
           <Nav variant="pills" className="flex-column">
+          <Nav.Item>
+              <Nav.Link className="btnTabsJobs" eventKey="four">
+              iOS Mobile Engineer
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link className="btnTabsJobs" eventKey="five">
+                Desarrollador Full Stack
+              </Nav.Link>
+            </Nav.Item>
             <Nav.Item>
               <Nav.Link className="btnTabsJobs" eventKey="first">
                 {t("text.tab.experience.one")}
@@ -85,6 +121,7 @@ const TabJobs = () => {
         </Col>
         <Col sm={9}>
           <Tab.Content>
+            {   console.log(jobs)}
             {jobs.map((job) => {
               return (
                 <Tab.Pane key={job.key} eventKey={job.key}>

@@ -10,7 +10,6 @@ const CardOtherProjects = ({
         <a href={link}>
           <i className="far fa-folder"></i>
         </a>
-
         <div>
           <a target="_blank" rel="noopener noreferrer" href={link}>
             <i className="fas fa-external-link-alt"></i>

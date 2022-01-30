@@ -12,8 +12,8 @@
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  height: 20vw;
-  width: 23vw;
+ // height: 20vw;
+  width: 20vw;
   margin: 1vw;
   padding: 2rem 1.75rem;
   border-radius: 10px;
@@ -34,7 +34,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 19vw;
+  width: 15vw;
+  margin-bottom: 20px;
 }
 .fa-external-link-alt {
   font-size: 2vw;

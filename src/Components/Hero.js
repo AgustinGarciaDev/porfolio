@@ -28,7 +28,7 @@ const Hero = () => {
         Agustin Garcia.
       </h1>
       <div ref={containerHero}>
-        <h2 className="subTitle">Full Stack MERN lover {`${"<3"}`} </h2>
+        <h2 className="subTitle">Full Stack MOBILE lover {`${"<3"}`} </h2>
         <p className="textHero">{t("text.hero")}</p>
         <a href="#contact" className="btnHero">
           {t("text.hero.btn")}
