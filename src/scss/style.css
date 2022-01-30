@@ -22,16 +22,6 @@
   p {
     font-size: 20px; } }
 
-.light {
-  --theme-color: #474545;
-  --theme-page-background: #fff;
-  --theme-page-text: #111; }
-
-.dark {
-  --theme-color: $slate;
-  --theme-page-background: #0a192f;
-  --theme-page-text: #fff; }
-
 header {
   padding: 15px;
   display: flex;
@@ -126,20 +116,15 @@ p {
   font-family: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
   margin: 0px; }
 
-.body {
-  width: 100%;
-  min-height: 100%;
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  overflow-x: hidden; }
+body {
+  overflow-x: hidden;
+  background-color: #0a192f; }
 
 #root {
   min-height: 100vh;
   display: grid;
   grid-template-rows: 1fr auto;
-  grid-template-columns: 100%;
-  background-color: #0a192f; }
+  grid-template-columns: 100%; }
 
 .homeContainer {
   padding: 0px 150px;
@@ -503,7 +488,7 @@ p {
     height: 8%; } }
 
 .projectContainer {
-  /*    margin: 0px auto; */
+  margin: 0px auto;
   padding: 100px 0px;
   max-width: 1000px; }
 
