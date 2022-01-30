@@ -25,16 +25,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
-.titleandNumber::after {
-  content: "";
-  display: block;
-  width: 300px;
-  height: 1px;
-  margin-left: 20px;
-  background-color: $light-slate;
-}
+// .titleandNumber::after {
+//   content: "";
+//   display: block;
+//   width: 300px;
+//   height: 1px;
+//   margin-left: 20px;
+//   background-color: $light-slate;
+// }
 
 .titleandNumber p {
   color: $light-slate;

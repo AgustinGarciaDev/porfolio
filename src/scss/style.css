@@ -305,15 +305,8 @@ body {
 .titleandNumber {
   display: flex;
   align-items: center;
-  justify-content: center; }
-
-.titleandNumber::after {
-  content: "";
-  display: block;
-  width: 300px;
-  height: 1px;
-  margin-left: 20px;
-  background-color: #ccd6f6; }
+  justify-content: center;
+  margin-top: 20px; }
 
 .titleandNumber p {
   color: #ccd6f6;
@@ -615,7 +608,8 @@ body {
 .containerCardsOtherProjects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 50px; }
 
 .otherContainer {
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
