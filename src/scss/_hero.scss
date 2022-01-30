@@ -10,20 +10,21 @@ p {
   margin: 0px;
 }
 
-.body{
+.body {
   width: 100%;
   min-height: 100%;
   min-height: 100vh;
   display: grid;
   grid-template-rows: 1fr auto;
+  overflow-x: hidden;
 }
 
-#root{
+#root {
   min-height: 100vh;
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: 100%;
-  background-color:$blue;
+  background-color: $blue;
 }
 
 .homeContainer {
@@ -32,7 +33,6 @@ p {
   max-width: 1600px;
   min-height: 100vh;
   margin: 0px auto;
-
 }
 
 .containerWeb {
@@ -68,8 +68,8 @@ p {
   margin-top: 50px;
   display: inline-block;
 }
-.btnHero:hover{
-  color:antiquewhite
+.btnHero:hover {
+  color: antiquewhite;
 }
 .containerHero {
   display: flex;
@@ -82,7 +82,6 @@ p {
   padding: 0px;
   margin-top: 30px;
 }
-
 
 @media (max-width: 800px) {
   .homeContainer {

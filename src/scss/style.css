@@ -131,7 +131,8 @@ p {
   min-height: 100%;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 1fr auto; }
+  grid-template-rows: 1fr auto;
+  overflow-x: hidden; }
 
 #root {
   min-height: 100vh;
