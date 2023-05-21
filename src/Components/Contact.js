@@ -13,7 +13,6 @@ const Contact = () => {
       </div>
       <div className="containerTextContact">
         <h3>{t("text.contact.subTitle")}</h3>
-        {/* <p>{t("text.contact")}</p> */}
         <a href="mailto:agustinchinchilla16@gmail.com">
           {t("text.contact.btn")}
         </a>

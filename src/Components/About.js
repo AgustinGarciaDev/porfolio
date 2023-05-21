@@ -41,31 +41,27 @@ const About = () => {
           <p className="textAbout">{t("text.technology")}</p>
           <div className="skills">
             <ul>
-              <li>Node</li>
-              <li>React</li>
-              <li>ReactNative</li>
-              <li>JSON</li>
-              <li>Mongo DB</li>
-              <li>Redux</li>
-              <li>Express</li>
+              <li>Swift</li>
+              <li>Cocoapods</li>
+              <li>XCTest</li>
+              <li>SwiftUI</li>
+              <li>SwiftPM</li>
+              <li>Core Data</li>
             </ul>
             <ul>
               <li>SCSS</li>
               <li>Git/GitHub</li>
-              <li>Docker</li>
-              <li>SCSS</li>
               <li>Selenium</li>
               <li>Laravel</li>
               <li>Firebase SDK</li>
             </ul>
             <ul>
-              <li>Swift</li>
-              <li>Cocoapods</li>
-              <li>Gitlab</li>
-              <li>XCTest</li>
-              <li>SwiftUI</li>
-              <li>SwiftPM</li>
-              <li>Core Data</li>
+              <li>Node</li>
+              <li>React</li>
+              <li>ReactNative</li>
+              <li>Mongo DB</li>
+              <li>Redux</li>
+              <li>Express</li>
             </ul>
           </div>
         </div>

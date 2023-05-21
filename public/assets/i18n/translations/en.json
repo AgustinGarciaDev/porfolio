@@ -20,6 +20,7 @@
     "text.experience.title.description.three": "I have done on several websites for clients web / blog optimization, keywords research and content strategy",
     "text.experience.title.description.four":"At Ixpandit carry out: development and maintenance of functionalities, tests, bug fixes. Technologies used:",
     "text.experience.title.description.five":"In Naranja X my tasks are: creation of user interfaces (programmatically), implementation of new features, bug fixes, integrations with REST web services (JSON), SDK integration, management of Cocoapods dependencies, use of repositories (GitLab) for control of versions, unit tests. As a work methodology we use SCRUM and MVP as architecture pattern.",
+    "text.experience.description.six":"I work at a bank in the onboarding team, where I work as a Semi senior iOS Developer. After creating a module for the registration of new customers and providing them with a credit or debit card, I am now tasked with improving the architecture of the module to support different types of onboarding.",
     "text.proyect": "My projects",
     "text.proyect.subtitleAbove": "Featured project",
     "text.proyect.description.one": "Web application built on the backend with Node, and the frontend with React js. To handle its global state I used Redux. myTinerary was an individual project, result of a 5-week sprin performed with the SCRUM methodology.",

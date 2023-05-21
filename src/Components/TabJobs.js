@@ -7,6 +7,13 @@ const TabJobs = () => {
   const jobs = [
     {
       title: "iOS Mobile Engineer",
+      descripction: "text.experience.description.six",
+      item: [],
+      key: "six",
+      date: "Actualmente",
+    },
+    {
+      title: "iOS Mobile Engineer",
       descripction: "text.experience.title.description.five",
       item: [],
       key: "four",
@@ -96,6 +103,11 @@ const TabJobs = () => {
       <Row>
         <Col sm={3}>
           <Nav variant="pills" className="flex-column">
+          <Nav.Item>
+              <Nav.Link className="btnTabsJobs" eventKey="six">
+                iOS Mobile Engineer
+              </Nav.Link>
+            </Nav.Item>
             <Nav.Item>
               <Nav.Link className="btnTabsJobs" eventKey="four">
                 iOS Mobile Engineer
@@ -117,7 +129,7 @@ const TabJobs = () => {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="three">Seo</Nav.Link>
+              <Nav.Link eventKey="three">SEO</Nav.Link>
             </Nav.Item>
           </Nav>
         </Col>

@@ -35,7 +35,6 @@ const Projects = () => {
       url: "https://user-images.githubusercontent.com/66225450/151716532-0578ff5a-e769-4e3a-b0f5-5ea228e158db.gif",
       gitHubLink: "https://github.com/AgustinGarciaDev/appMyTinerary",
     },
-
     {
       title: "Explore",
       id: "explore",
