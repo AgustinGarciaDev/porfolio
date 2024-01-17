@@ -2,7 +2,6 @@
   max-width: 700px;
   margin: 0px auto;
   padding: 100px 0px;
-  height: 36vw;
 }
 .containerTabs {
   margin-top: 5vw;
@@ -82,18 +81,14 @@
   flex-direction: column;
 }
 @media (max-width: 900px) {
-  .jobs {
-    height: 67vw;
-  }
+ 
   .containerJobDescription {
     margin-left: 7vw;
   }
 }
 
 @media (max-width: 668px) {
-  .jobs {
-    height: 95vw;
-  }
+
   .tab-content {
     margin: 20px 0;
   }
@@ -106,9 +101,7 @@
 }
 
 @media (max-width: 521px) {
-  .jobs {
-    height: 8%;
-  }
+
 
   .titleDescripcionTabJob {
     font-weight: 400;
@@ -130,9 +123,7 @@
   .titleandNumber::after {
     width: 110px;
   }
-  .jobs {
-    height: 7%;
-  }
+
   .tab-content {
     margin: 20px 0;
   }
@@ -145,7 +136,5 @@
 }
 
 @media (max-width: 452px) {
-  .jobs {
-    height: 8%;
-  }
+
 }

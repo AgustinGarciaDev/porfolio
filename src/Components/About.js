@@ -49,11 +49,11 @@ const About = () => {
               <li>Core Data</li>
             </ul>
             <ul>
-              <li>SCSS</li>
+              <li>Sqlite</li>
               <li>Git/GitHub</li>
-              <li>Selenium</li>
-              <li>Laravel</li>
-              <li>Firebase SDK</li>
+              <li>SDK Firebse/Analytics</li>
+              <li>Combine</li>
+              <li>App Store Conect</li>
             </ul>
             <ul>
               <li>Node</li>

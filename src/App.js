@@ -3,7 +3,7 @@ import Home from "./Pages/Home";
 import NavBarLeft from "./Components/NavBars/NavBarLeft";
 import NavBarRigth from "./Components/NavBars/NavBarRigth";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./scss/style.css";
+import "./scss/style.scss";
 import { Suspense } from "react";
 import "./i18n";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
