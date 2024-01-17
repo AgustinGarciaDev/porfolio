@@ -16,7 +16,7 @@ const Projects = () => {
         "MVVM",
       ],
       url: "/assets/gif/onboarding.gif",
-      gitHubLink: "https://apps.apple.com/ar/app/banca-m%C3%B3vil-banco-hipotecario/id469262970",
+      storeApp: "https://apps.apple.com/ar/app/banca-m%C3%B3vil-banco-hipotecario/id469262970"
     },
     ,
     {
@@ -34,7 +34,7 @@ const Projects = () => {
         "MVVM",
       ],
       url: "/assets/gif/roly.gif",
-      gitHubLink: "",
+      storeApp: "https://apps.apple.com/ar/app/roly-m-commerce/id1100636934"
     },
     {
       title: "Naranja X",
@@ -50,7 +50,7 @@ const Projects = () => {
         "VIPER",
       ],
       url: "/assets/gif/naranjax.gif",
-      gitHubLink: "",
+      storeApp: "https://apps.apple.com/ar/app/naranja-x-tu-plata-crece/id1452691757",
     },
     {
       title: "Scanner DNI",
@@ -65,7 +65,7 @@ const Projects = () => {
         "Combine"
       ],
       url: "/assets/gif/scannerDNI.gif",
-      gitHubLink: "https://github.com/AgustinGarciaDev/appMyTinerary",
+      storeApp: "https://apps.apple.com/ar/app/scaner-barcode-dni/id6464230303?l=en-GB"
     },
     {
       title: "Somos Gestión Humana",
@@ -79,7 +79,7 @@ const Projects = () => {
         "Modle",
       ],
       url: "/assets/gif/somosgestionhumana.gif",
-      gitHubLink: "https://ghcapacitacion.com/cursos/",
+      linkWeb: "https://ghcapacitacion.com/cursos/",
     },
     {
       title: "Disney+",

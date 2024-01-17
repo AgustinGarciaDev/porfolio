@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 const CardProjects = ({
-  project: { id, title, description, tecnology, url, linkWeb, gitHubLink },
+  project: { id, title, description, tecnology, url, linkWeb, storeApp,gitHubLink },
 }) => {
   const { t } = useTranslation();
 
@@ -29,9 +29,18 @@ const CardProjects = ({
               <i className="fas fa-external-link-alt"></i>
             </a>
           )}
-          <a target="_blank" rel="noopener noreferrer" href={gitHubLink}>
-            <i className="fab fa-github-alt"></i>
-          </a>
+
+        {gitHubLink && (
+                     <a target="_blank" rel="noopener noreferrer" href={gitHubLink}>
+                     <i className="fab fa-github-alt"></i>
+                   </a>
+          )}
+        
+          {storeApp && (
+            <a target="_blank" rel="noopener noreferrer" href={storeApp}>
+             <i class="fab fa-app-store-ios"></i>
+            </a>
+          )}
         </div>
       </div>
     </article>
