@@ -1,2 +1,4 @@
 [build]
 CI= npm run build
+[[plugins]]
+package = "netlify-plugin-image-optim"
