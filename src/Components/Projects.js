@@ -49,7 +49,7 @@ const Projects = () => {
         "VIP",
         "VIPER",
       ],
-      url: "https://github.com/AgustinGarciaDev/porfolio/assets/66225450/8f66b21b-a376-4ebd-acf5-4deb1c605e79",
+      url: "/assets/gif/naranjax.gif",
       storeApp: "https://apps.apple.com/ar/app/naranja-x-tu-plata-crece/id1452691757",
     },
     {
