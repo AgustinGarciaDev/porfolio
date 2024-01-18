@@ -60,7 +60,7 @@ const Header = () => {
         <div className="containerBtnAndSwitch">
           <a
             target="_blank"
-            href="/assets/cv-agustinchinchillagarcia.pdf"
+            href="/assets/AgustinGarcia-EN.pdf"
             download
             rel="noopener noreferrer"
             className="btnHeaderCv"

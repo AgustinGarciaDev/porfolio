@@ -7,7 +7,7 @@ const Contact = () => {
     <section id="contact" className="contacto">
       <div className="titleSectionContact">
         <div className="titleandNumberContact">
-          <span>.04</span>
+          <span>.05</span>
           <p>{t("text.contact")}</p>
         </div>
       </div>
@@ -20,7 +20,7 @@ const Contact = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/agust%C3%ADngarc%C3%ADa/"
+            href="https://www.linkedin.com/in/agustingarciadev/"
           >
             <i className="fab fa-linkedin "></i>
           </a>

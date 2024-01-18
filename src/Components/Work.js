@@ -7,7 +7,7 @@ const Work = () => {
     <section id="experience" className="jobs">
       <div className="titleSection">
         <div className="titleandNumber">
-          <span>.02</span>
+          <span>.03</span>
           <p>{t("text.experience")}</p>
         </div>
         <div></div>

@@ -27,6 +27,7 @@ header {
 .fixed-top {
   background: #0c2343b0;
   backdrop-filter: blur(5px);
+  padding: 5px;
 }
 .nav-link {
   color: white !important;
@@ -36,6 +37,7 @@ header {
 .nav-link > span {
   color: $green;
 }
+
 .btnHeaderCv {
   color: $green;
   background-color: transparent;

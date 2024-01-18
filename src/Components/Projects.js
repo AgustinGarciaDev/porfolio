@@ -49,7 +49,7 @@ const Projects = () => {
         "VIP",
         "VIPER",
       ],
-      url: "/assets/gif/naranjax.gif",
+      url: "https://github.com/AgustinGarciaDev/porfolio/assets/66225450/8f66b21b-a376-4ebd-acf5-4deb1c605e79",
       storeApp: "https://apps.apple.com/ar/app/naranja-x-tu-plata-crece/id1452691757",
     },
     {
@@ -132,7 +132,7 @@ const Projects = () => {
     <section id="projects" className="projectContainer">
       <div className="titleSection">
         <div className="titleandNumber">
-          <span>.03</span>
+          <span>.04</span>
           <p>{t("text.proyect")}</p>
         </div>
         <div></div>

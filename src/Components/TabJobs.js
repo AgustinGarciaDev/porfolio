@@ -194,12 +194,12 @@ const TabJobs = () => {
           <Nav variant="pills" className="flex-column">
           <Nav.Item>
               <Nav.Link className="btnTabsJobs" eventKey="seven">
-                iOS Mobile BraingApps
+                iOS Mobile Coderio
               </Nav.Link>
             </Nav.Item>
           <Nav.Item>
               <Nav.Link className="btnTabsJobs" eventKey="six">
-                iOS Mobile Coderio
+                iOS Mobile BraingApps
               </Nav.Link>
           </Nav.Item>
             <Nav.Item>

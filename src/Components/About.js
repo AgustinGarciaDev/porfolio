@@ -27,10 +27,10 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="containerAbout">
+    <section className="containerAbout">
       <div ref={titleNumer} className="titleSection">
-        <div className="titleandNumber">
-          <span>.01</span>
+        <div  id="about" className="titleandNumber">
+          <span>.02</span>
           <p>{t("text.header.two")}</p>
         </div>
         <div></div>
@@ -50,7 +50,7 @@ const About = () => {
             </ul>
             <ul>
               <li>Sqlite</li>
-              <li>Git/GitHub</li>
+              <li>Git/GitHub</li> 
               <li>SDK Firebse/Analytics</li>
               <li>Combine</li>
               <li>App Store Conect</li>
@@ -68,7 +68,7 @@ const About = () => {
         <div>
           <img
             className="PhotoProfile"
-            src="https://user-images.githubusercontent.com/66225450/122656714-977cae00-d133-11eb-9eec-d4360bd02c5a.png"
+            src="/assets/photo_profile.png"
             alt="la fotito"
           />
         </div>

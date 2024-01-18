@@ -7,8 +7,8 @@
     "text.header.six": "Descargar CV",
     "text.hero": "Desarrollo productos de manera impecable y accesible, abarcando desde aplicaciones móviles hasta páginas web.",
 
-    "text.hero.btn": "Ponete en contacto!",
-    "text.aboutme":"Hola! Soy Agustín, un experimentado desarrollador de iOS con más de dos años de experiencia. Mi trayectoria incluye cuatro años en el desarrollo web con WordPress y un año explorando React y Node. Enfocado actualmente en la creación de aplicaciones móviles para Apple",
+    "text.hero.btn": "¡Ponéte en contacto!",
+    "text.aboutme":"¡Hola! Soy Agustín, un desarrollador de iOS con más de dos años de experiencia. Mi trayectoria incluye cuatro años en el desarrollo web con WordPress y un año explorando React y Node. Enfocado actualmente en la creación de aplicaciones móviles para Apple",
     "text.technology": "Tecnologías que he utilizado recientemente:",
     "text.experience": "Experiencia laboral",
     "text.tab.experience.one": "Desarrollador Full Stack MERN",
@@ -21,6 +21,7 @@
     "text.experience.title.description.four": "En Ixpandit realice: desarrollo y mantenimiento de funcionalidades, test, fixs de bugs. Tecnologias usadas:",
     "text.experience.title.description.five":"En naranja X mis tareas son : creación de interfaces de usuario(programáticamente) , implementación de nuevas funcionalidades, bug fixes, integraciones con REST web services(JSON), integración SDK ,manejo de dependencias Cocoapods, uso de repositorios (GitLab) para el control de versiones, test unitarios. Como metodología de trabajo utilizamos SCRUM y MVP como patron de arquitectura.",
     "text.proyect": "Mis proyectos",
+    "text.experience.description.six": "Trabajo en un banco en el equipo de incorporación, donde desempeño el rol de Desarrollador iOS Semi Senior. Después de crear un módulo para el registro de nuevos clientes y proporcionarles una tarjeta de crédito o débito, ahora se me ha encomendado la tarea de mejorar la arquitectura del módulo para admitir diferentes tipos de incorporación.",
 
     "text.proyect.subtitleAbove": "Proyecto destacado",
     "text.proyect.description.one": "Onboarding es un canal de originación para altas de clientes. Los usuarios se pueden dar de alta con una caja de ahora y una tarjeta de crédito. Dentro de este canal tenemos diferentes validaciones de identidad. También cuenta con sistema de referidos, geolocalización y diferentes adaptaciones custom dependiendo de donde este llegando el cliente a través de un universal links.",
@@ -48,3 +49,5 @@
     "text.contact.subTitle": "Contactame",
     "text.contact.btn": "Contacto"
 }
+
+

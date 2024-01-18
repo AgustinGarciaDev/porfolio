@@ -5,7 +5,7 @@ const NavBarLeft = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/agust%C3%ADngarc%C3%ADa/"
+          href="https://www.linkedin.com/in/agustingarciadev/"
         >
           <i className="fab fa-linkedin "></i>
         </a>
