@@ -3,7 +3,32 @@ import { useTranslation } from "react-i18next";
 const Projects = () => {
   const { t } = useTranslation();
   const projects = [
-
+    {
+      title: "Wallets connected to Banco Hipotecario",
+      id: "bancohipotecario_cosent",
+      description: "text.proyect.description.teen",
+      tecnology: [
+        "Swift",
+        "UIKit",
+        "SDK MODO",
+        "MVVM",
+      ],
+      url: "/assets/gif/consent.gif",
+      storeApp: "https://apps.apple.com/ar/app/banca-m%C3%B3vil-banco-hipotecario/id469262970"
+    },
+    {
+      title: "Pull Transfers from Banco Hipotecario",
+      id: "bancohipotecario_TRX",
+      description: "text.proyect.description.eleven",
+      tecnology: [
+        "Swift",
+        "UIKit",
+        "SDK MODO",
+        "MVVM",
+      ],
+      url: "/assets/gif/transfer_pull.gif",
+      storeApp: "https://apps.apple.com/ar/app/banca-m%C3%B3vil-banco-hipotecario/id469262970"
+    },
     {
       title: "Onboarding Banco Hipotecario",
       id: "onboarding",
@@ -17,7 +42,7 @@ const Projects = () => {
       ],
       url: "/assets/gif/onboarding.gif",
       storeApp: "https://apps.apple.com/ar/app/banca-m%C3%B3vil-banco-hipotecario/id469262970"
-    },
+    }
     ,
     {
       title: "Roly",

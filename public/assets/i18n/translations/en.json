@@ -44,6 +44,8 @@
     "text.proyect.description.seven": "MVP prototype of an online fitness courses application. Application developed with the MERN stack.",
     "text.proyect.description.eigth": "MVP prototype of an application that exemplifies how a animes platform could look, inspired by the design of Crunchyroll.",
     "text.proyect.description.nine":"MVP prototype of a music application. Within this app, users can add songs, listen to them, adjust their volume, and download them.",
+    "text.proyect.description.teen":"Through this channel, bank users can grant consent to initiate pull transfers with their other digital wallets.",
+    "text.proyect.description.eleven":"Through this channel, users can initiate pull transfers from their other accounts. This action is only possible if they have previously granted consent for such transactions.",
 
    
     "text.otherProyect" : "Other projects",
