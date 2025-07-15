@@ -1,27 +1,12 @@
 import { useRef, useEffect } from "react";
-import { gsap } from "gsap";
 import { Navbar, Nav } from "react-bootstrap";
 import ChangeLenguage from "./ChangeLenguage";
 import { useTranslation } from "react-i18next";
 const Header = () => {
   const header = useRef(null);
   const { t } = useTranslation();
-  useEffect(() => {
-    gsap.from(
-      header.current,
-      {
-        x: "-100px",
-        duration: 1.5,
-        ease: "",
-      },
-      {
-        x: "0px",
-      }
-    );
-  }, []);
   return (
     <Navbar
-      ref={header}
       className="fixed-top  navbar-dark "
       collapseOnSelect
       expand="lg"
