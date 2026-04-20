@@ -1,61 +1,50 @@
-import { useRef, useEffect } from "react";
-import { Navbar, Nav } from "react-bootstrap";
-import ChangeLenguage from "./ChangeLenguage";
-import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
+
 const Header = () => {
-  const header = useRef(null);
-  const { t } = useTranslation();
+  useEffect(() => {
+    const stored = localStorage.getItem("ag-theme");
+    if (stored) {
+      document.documentElement.setAttribute("data-theme", stored);
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+
+    const onScroll = () => {
+      const nav = document.getElementById("main-nav");
+      if (nav) nav.classList.toggle("scrolled", window.scrollY > 20);
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const toggleTheme = () => {
+    const html = document.documentElement;
+    const next = html.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    html.setAttribute("data-theme", next);
+    localStorage.setItem("ag-theme", next);
+  };
+
   return (
-    <Navbar
-      className="fixed-top  navbar-dark "
-      collapseOnSelect
-      expand="lg"
-    >
-      <Navbar.Brand href="#home">
-        <img
-          className="logo"
-          src="https://user-images.githubusercontent.com/66225450/122686877-f3097300-d1e9-11eb-93c2-1c18710706e8.png"
-          alt=""
-        />
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#inicio">
-            <span>01.</span>
-            {t("text.header.one")}
-          </Nav.Link>
-          <Nav.Link href="#about">
-            <span>02.</span>
-            {t("text.header.two")}
-          </Nav.Link>
-          <Nav.Link href="#experience">
-            <span>03.</span>
-            {t("text.header.three")}
-          </Nav.Link>
-          <Nav.Link href="#projects">
-            <span>04.</span>
-            {t("text.header.four")}
-          </Nav.Link>
-          <Nav.Link href="#contact">
-            <span>05.</span>
-            {t("text.header.five")}
-          </Nav.Link>
-        </Nav>
-        <div className="containerBtnAndSwitch">
-          <a
-            target="_blank"
-            href="/assets/AgustinGarcia-EN.pdf"
-            download
-            rel="noopener noreferrer"
-            className="btnHeaderCv"
-          >
-            {t("text.header.six")}
-          </a>
-          <ChangeLenguage />
-        </div>
-      </Navbar.Collapse>
-    </Navbar>
+    <nav id="main-nav">
+      <a href="#hero" className="nav-logo">AG<span>.</span>dev</a>
+      <div className="nav-right">
+        <ul className="nav-links">
+          <li className="nav-item"><a href="#about">About</a></li>
+          <li className="nav-item"><a href="#experience">Experience</a></li>
+          <li className="nav-item"><a href="#projects">Projects</a></li>
+          <li className="nav-cta"><a href="#contact">Contact</a></li>
+        </ul>
+        <button className="theme-toggle" id="theme-btn" aria-label="Toggle dark mode" onClick={toggleTheme}>
+          <svg className="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg className="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
   );
 };
 

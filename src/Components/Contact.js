@@ -1,40 +1,20 @@
-import { useTranslation } from "react-i18next";
-
-const Contact = () => {
-  const { t } = useTranslation();
-
-  return (
-    <section id="contact" className="contacto">
-      <div className="titleSectionContact">
-        <div className="titleandNumberContact">
-          <span>.05</span>
-          <p>{t("text.contact")}</p>
-        </div>
-      </div>
-      <div className="containerTextContact">
-        <h3>{t("text.contact.subTitle")}</h3>
-        <a href="mailto:agustinchinchilla16@gmail.com">
-          {t("text.contact.btn")}
-        </a>
-        <div className="containerIconsFooter">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/agustingarciadev/"
-          >
-            <i className="fab fa-linkedin "></i>
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/AgustinGarciaDev"
-          >
-            <i className="fab fa-github-square"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-  );
-};
+const Contact = () => (
+  <section id="contact">
+    <div className="reveal">
+      <p className="sec-label" style={{ textAlign: "center" }}>Get in touch</p>
+      <h2 className="contact-title">What's the next step?</h2>
+      <p className="contact-body">
+        I'm open to new opportunities and challenges — from startups building their first iOS app
+        to enterprises needing a technical lead. My inbox is always open.
+      </p>
+      <a href="mailto:agustinchinchilla16@gmail.com" className="btn-primary" style={{ display: "inline-flex" }}>
+        Send me an email
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+);
 
 export default Contact;
