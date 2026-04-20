@@ -1,6 +1,6 @@
 import Header from "./Components/Header";
 import Home from "./Pages/Home";
-import "./scss/style.scss";
+import "./style.css";
 
 const App = () => {
   return (
