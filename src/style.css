@@ -323,6 +323,7 @@ section {
   background: var(--accent); color: #fff;
   padding: 2px 7px; border-radius: 980px; margin-left: 6px;
   vertical-align: middle; letter-spacing: 0.3px;
+  white-space: nowrap;
 }
 
 .tl-right { text-align: right; flex-shrink: 0; }
@@ -344,7 +345,7 @@ section {
   opacity: 0;
 }
 
-.tl-item.open .tl-body { max-height: 800px; opacity: 1; }
+.tl-item.open .tl-body { max-height: 1600px; opacity: 1; }
 
 .tl-body-inner { padding: 4px 18px 20px 18px; }
 
@@ -590,16 +591,62 @@ footer span { color: var(--accent); }
   .featured-card.reversed .fc-body { order: 1; }
   .featured-card.reversed .fc-visual { order: 2; }
 
-  .fc-visual { min-height: 260px; }
-  .ip17-center { width: 40%; }
-  .ip17-side { width: 28%; }
+  .fc-body { padding: 36px 32px; }
+  .fc-stack { gap: 6px; margin-bottom: 22px; }
+  .fc-visual { min-height: 280px; }
+  .ip17-center { width: 38%; }
+  .ip17-side { width: 26%; }
   .other-grid { grid-template-columns: 1fr 1fr; }
 
   .nav-links .nav-item { display: none; }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 640px) {
+  #hero { min-height: unset; padding-top: calc(var(--nav-h) + 40px); padding-bottom: 60px; }
+
+  :root { --radius-card: 16px; }
+  .featured-card { border-radius: 16px; }
+  .other-card { border-radius: 12px; }
+
+  .tl-header { flex-wrap: wrap; gap: 2px; align-items: flex-start; }
+  .tl-left { width: calc(100% - 32px); }
+  .tl-right {
+    width: 100%;
+    display: flex; flex-direction: row;
+    justify-content: space-between; align-items: center;
+    margin-top: 4px;
+  }
+  .tl-date { font-size: 11px; white-space: normal; }
+  .tl-chevron { margin-top: 0; }
+
+  .tl-company { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
+  .tl-company .badge { margin-left: 0; }
+
+  .tl-stack { gap: 5px; }
+  .tl-tag { font-size: 10px; padding: 3px 8px; }
+
   :root { --px: 20px; }
-  .other-grid { grid-template-columns: 1fr; }
+
+  .hero-actions { flex-direction: column; align-items: stretch; gap: 12px; margin-top: 36px; }
+  .btn-primary, .btn-outline { justify-content: center; padding: 14px 22px; font-size: 15px; }
+
   .hero-stats { flex-wrap: wrap; gap: 24px; }
+
+  .fc-body { padding: 28px 22px; }
+  .fc-title { font-size: 21px; }
+  .fc-desc { font-size: 14px; margin-bottom: 20px; }
+  .fc-stack { gap: 5px; margin-bottom: 18px; }
+  .fc-tag { font-size: 10px; padding: 3px 9px; }
+
+  .fc-visual { min-height: 240px; }
+  .ip17-center { width: 40%; }
+  .ip17-side { width: 27%; }
+  .phones-stage { gap: 6px; padding: 18px 12px; }
+
+  .other-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 400px) {
+  .btn-primary, .btn-outline { padding: 13px 18px; font-size: 14px; }
+  .fc-body { padding: 22px 18px; }
 }

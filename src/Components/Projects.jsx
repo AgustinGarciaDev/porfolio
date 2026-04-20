@@ -20,19 +20,30 @@ const FEATURED = [
     link: null,
     images: ["/assets/sweat_sonic_one.webp", "/assets/sweat_sonic_two.webp", "/assets/sweat_sonic_three.webp"],
   },
-];
-
-const OTHER = [
   {
-    title: "Reparanet Crash Recovery",
-    desc: "Reduced crash rate from ~90% to 0% in under 30 days. Full architecture refactor and observability system.",
-    stack: ["Swift", "SwiftUI", "CoreLocation", "BackgroundTasks"],
+    title: "Reparanet — Crisis Recovery",
+    desc: "Reduced crash rate from ~90% to 0% in under 30 days. Architected background geolocation with automated push notifications, autonomous background processing, and full UI modernization (UIKit → SwiftUI).",
+    stack: ["Swift", "SwiftUI", "CoreLocation", "BackgroundTasks", "MVVM", "Clean Architecture"],
+    link: null,
+    images: ["/assets/reparanet_one.webp", "/assets/reparanet_two.webp", "/assets/reparanet_three.webp"],
+  },
+  {
+    title: "Naranja X — Banking App",
+    desc: "Banking interfaces for one of Argentina's leading fintech apps. Architected VIPER modules, implemented comprehensive testing (unit, integration, UI snapshot), and modernized legacy MVP → MVVM flows.",
+    stack: ["Swift", "UIKit", "VIPER", "MVVM", "XCTest", "Bitrise", "CocoaPods"],
+    link: null,
+    images: ["/assets/naranja_one.webp", "/assets/naranja_two.webp", "/assets/naranja_three.webp"],
   },
   {
     title: "Roly — M-Commerce",
-    desc: "European promotional textile brand app. Catalog browsing and wholesale order placement.",
+    desc: "European promotional textile brand app. Full catalog browsing, color and size selectors, and wholesale order placement. Built for speed and scale.",
     stack: ["Swift", "UIKit", "Firebase", "SQLite", "MVVM"],
+    link: null,
+    images: ["/assets/roly_one.webp", "/assets/roly_two.webp", "/assets/roly_three.webp"],
   },
+];
+
+const OTHER = [
   {
     title: "Banco Hipotecario — Wallets",
     desc: "Pull transfer consent flow integrating the MODO digital wallet SDK.",
