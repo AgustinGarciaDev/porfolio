@@ -3,11 +3,9 @@ import { useEffect } from "react";
 const Header = () => {
   useEffect(() => {
     const stored = localStorage.getItem("ag-theme");
-    if (stored) {
-      document.documentElement.setAttribute("data-theme", stored);
-    } else {
-      document.documentElement.setAttribute("data-theme", "light");
-    }
+    const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const theme = stored ?? (systemDark ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
 
     const onScroll = () => {
       const nav = document.getElementById("main-nav");
